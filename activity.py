@@ -23,6 +23,7 @@ import sys
 import os
 import statvfs
 import logging
+import pango
 
 from gettext import gettext as _
 
@@ -32,6 +33,7 @@ from sugar.activity import activity
 from sugar.activity.widgets import ActivityToolbarButton
 from sugar.activity.widgets import StopButton
 from sugar.graphics.toolbarbox import ToolbarBox
+from sugar.graphics.toolbutton import ToolButton
 
 path = os.path.join(os.getenv('HOME'), 'Activities', 'SimpleGraph.activity')
 sys.path.insert(0, path)
@@ -54,7 +56,11 @@ class AnalizeJournal(activity.Activity):
         toolbarbox = ToolbarBox()
 
         activity_button = ActivityToolbarButton(self)
-        toolbarbox.toolbar.insert(activity_button, -1)
+        toolbarbox.toolbar.insert(activity_button, 0)
+
+        update_btn = ToolButton('gtk-refresh')
+        update_btn.connect('clicked', self._analize)
+        toolbarbox.toolbar.insert(update_btn, -1)
 
         separator = gtk.SeparatorToolItem()
         separator.set_draw(False)
@@ -73,28 +79,47 @@ class AnalizeJournal(activity.Activity):
         self.chart_data = []
 
         # CANVAS
-        self.chart_area = ChartArea(self)
-        self.set_canvas(self.chart_area)
+        self.area = Area(self)
+        self.set_canvas(self.area)
 
-        self.chart_area.show_all()
+        self.area.show_all()
 
         # ANALIZE
-        self._analize()
+        self.show_all()
+        self._analize(None)
 
-    def  _analize(self):
+    def  _analize(self, widget):
         self.chart_data = []
 
         free_space, used_space, total_space = self._get_space()
 
+        # Graph
         self.chart_data.append((_('Free'), free_space))
         self.chart_data.append((_('Used'), used_space))
 
         self.chart = Chart()
         self.chart.data_set(self.chart_data)
         self.chart.set_type('pie')
+        self._resize_chart()
         self.chart.render(self)
 
-        self.chart_area.queue_draw()
+        # Set info
+        info = \
+          ' Total space: %s MB \n Used space: %s MB \n Free space: %s MB' % (
+                                         total_space, used_space, free_space)
+
+        self.area.text = info
+
+        self.area.queue_draw()
+
+    def _resize_chart(self):
+        sx, sy, width, height = self.area.get_allocation()
+
+        new_width = width - 200
+        new_height = height - 200
+
+        self.chart.width = new_width
+        self.chart.height = new_height
 
     def _get_space(self):
         stat = os.statvfs(env.get_profile_path())
@@ -115,16 +140,23 @@ class AnalizeJournal(activity.Activity):
         return space
 
 
-class ChartArea(gtk.DrawingArea):
+class Area(gtk.DrawingArea):
 
     def __init__(self, parent):
-        super(ChartArea, self).__init__()
+        super(Area, self).__init__()
         self._parent = parent
         self.add_events(gtk.gdk.EXPOSURE_MASK | gtk.gdk.VISIBILITY_NOTIFY_MASK)
-        self.connect("expose-event", self._expose_cb)
+        self.connect('expose-event', self._expose_cb)
+
+        self.text = ''
+
+        pango_context = self.get_pango_context()
+        self.layout = pango.Layout(pango_context)
+        self.layout.set_font_description(pango.FontDescription('13'))
 
     def _expose_cb(self, widget, event):
         context = self.window.cairo_create()
+        gc = self.window.new_gc()
 
         x, y, w, h = self.get_allocation()
 
@@ -134,5 +166,16 @@ class ChartArea(gtk.DrawingArea):
         context.fill()
 
         # Paint the chart:
-        context.set_source_surface(self._parent.chart.surface)
+        cw, ch = self._parent.chart.width, self._parent.chart.height
+        x, y, w, h = self.get_allocation()
+
+        cy = y + h / 2 - ch / 2
+
+        context.set_source_surface(self._parent.chart.surface, x, cy)
         context.paint()
+
+        # Write the info
+        self.layout.set_markup(self.text)
+        lx = x + cw
+
+        self.window.draw_layout(gc, lx, cy, self.layout)
