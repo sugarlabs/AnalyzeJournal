@@ -104,9 +104,23 @@ class AnalizeJournal(activity.Activity):
         self.chart.render(self)
 
         # Set info
-        a = _('Total space: %s MBs') % (total_space)
-        b = _('Used space: %s MBs') % (used_space)
-        c = _('Free space: %s MBs') % (free_space)
+        f_type, t_type, u_type = 'MBs', 'MBs', 'MBs'
+
+        if free_space >= 1024:
+            free_space = self._get_GBs(free_space)
+            f_type = 'GBs'
+
+        if total_space >= 1024:
+            total_space = self._get_GBs(total_space)
+            t_type = 'GBs'
+
+        if used_space >= 1024:
+            used_space = self._get_GBs(used_space)
+            u_type = 'GBs'
+
+        a = _('Total space: %s %s') % (total_space, t_type)
+        b = _('Used space: %s %s') % (used_space, u_type)
+        c = _('Free space: %s %s') % (free_space, f_type)
 
         info = a + '\n' + b + '\n' + c
 
@@ -138,6 +152,11 @@ class AnalizeJournal(activity.Activity):
 
     def _get_MBs(self, space):
         space = space / (1024 * 1024)
+
+        return space
+
+    def _get_GBs(self, space):
+        space = space / 1024
 
         return space
 
