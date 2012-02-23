@@ -104,9 +104,11 @@ class AnalizeJournal(activity.Activity):
         self.chart.render(self)
 
         # Set info
-        info = \
-          ' Total space: %s MB \n Used space: %s MB \n Free space: %s MB' % (
-                                         total_space, used_space, free_space)
+        a = _('Total space: %s MBs') % (total_space)
+        b = _('Used space: %s MBs') % (used_space)
+        c = _('Free space: %s MBs') % (free_space)
+
+        info = a + '\n' + b + '\n' + c
 
         self.area.text = info
 
