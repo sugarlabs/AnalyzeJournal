@@ -45,7 +45,7 @@ logger.setLevel(logging.DEBUG)
 logging.basicConfig()
 
 
-class AnalizeJournal(activity.Activity):
+class AnalyzeJournal(activity.Activity):
 
     def __init__(self, handle):
         activity.Activity.__init__(self, handle, False)
@@ -59,7 +59,7 @@ class AnalizeJournal(activity.Activity):
         toolbarbox.toolbar.insert(activity_button, 0)
 
         update_btn = ToolButton('gtk-refresh')
-        update_btn.connect('clicked', self._analize)
+        update_btn.connect('clicked', self._analyze)
         toolbarbox.toolbar.insert(update_btn, -1)
 
         separator = gtk.SeparatorToolItem()
@@ -84,11 +84,11 @@ class AnalizeJournal(activity.Activity):
 
         self.area.show_all()
 
-        # ANALIZE
+        # ANALYZE
         self.show_all()
-        self._analize(None)
+        self._analyze(None)
 
-    def  _analize(self, widget):
+    def  _analyze(self, widget):
         self.chart_data = []
 
         free_space, used_space, total_space = self._get_space()

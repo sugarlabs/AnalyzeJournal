@@ -1,7 +1,7 @@
 [Activity]
-name = Analize Journal
+name = Analyze Journal
 activity_version = 1
-bundle_id = org.sugarlabs.AnalizeJournal
-exec = sugar-activity activity.AnalizeJournal -s
-icon = analizejournal
+bundle_id = org.sugarlabs.AnalyzeJournal
+exec = sugar-activity activity.AnalyzeJournal -s
+icon = analyzejournal
 license = GPLv3+
