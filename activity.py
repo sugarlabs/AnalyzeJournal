@@ -48,7 +48,7 @@ logging.basicConfig()
 class AnalyzeJournal(activity.Activity):
 
     def __init__(self, handle):
-        activity.Activity.__init__(self, handle, False)
+        activity.Activity.__init__(self, handle, True)
 
         self.max_participants = 1
 
@@ -118,11 +118,11 @@ class AnalyzeJournal(activity.Activity):
             used_space = self._get_GBs(used_space)
             u_type = 'GBs'
 
-        a = _('Total space: %s %s') % (total_space, t_type)
-        b = _('Used space: %s %s') % (used_space, u_type)
-        c = _('Free space: %s %s') % (free_space, f_type)
-
-        info = a + '\n' + b + '\n' + c
+        t = _('<span foreground="blue"><b>Info:</b></span>')
+        ts = _('<big>Total space:</big> %s %s') % (total_space, t_type)
+        us = _('<big>Used space:</big> %s %s') % (used_space, u_type)
+        fs = _('<big>Free space:</big> %s %s') % (free_space, f_type)
+        info = t + '\n' + ts + '\n' + us + '\n' + fs
 
         self.area.text = info
 
@@ -131,8 +131,8 @@ class AnalyzeJournal(activity.Activity):
     def _resize_chart(self):
         sx, sy, width, height = self.area.get_allocation()
 
-        new_width = width - 200
-        new_height = height - 200
+        new_width = width - 250
+        new_height = height - 250
 
         self.chart.width = new_width
         self.chart.height = new_height
@@ -188,8 +188,6 @@ class Area(gtk.DrawingArea):
 
         # Paint the chart:
         cw, ch = self._parent.chart.width, self._parent.chart.height
-        x, y, w, h = self.get_allocation()
-
         cy = y + h / 2 - ch / 2
 
         context.set_source_surface(self._parent.chart.surface, x, cy)
@@ -197,6 +195,10 @@ class Area(gtk.DrawingArea):
 
         # Write the info
         self.layout.set_markup(self.text)
-        lx = x + cw
+        lw = (self.layout.get_pixel_extents()[1][2] * len(self.text)) / 1000
+        lh = (self.layout.get_pixel_extents()[1][2] * 3) / 1000
 
-        self.window.draw_layout(gc, lx, cy, self.layout)
+        lx = x + cw
+        ly = y + h / 2 - lh / 2
+
+        self.window.draw_layout(gc, lx, ly, self.layout)
