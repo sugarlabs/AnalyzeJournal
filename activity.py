@@ -38,11 +38,15 @@ from sugar.graphics.toolbutton import ToolButton
 path = os.path.join(os.getenv('HOME'), 'Activities', 'SimpleGraph.activity')
 sys.path.insert(0, path)
 
+import utils
 from charts import Chart
 
 logger = logging.getLogger('AnalizeJournal-activity')
 logger.setLevel(logging.DEBUG)
 logging.basicConfig()
+
+FILL_COLOR = utils.get_user_color()[0]
+STROKE_COLOR = utils.get_user_color()[1]
 
 
 class AnalyzeJournal(activity.Activity):
@@ -118,15 +122,36 @@ class AnalyzeJournal(activity.Activity):
             used_space = self._get_GBs(used_space)
             u_type = 'GBs'
 
-        t = _('<span foreground="blue"><b>Info:</b></span>')
-        ts = _('<big>Total space:</big> %s %s') % (total_space, t_type)
-        us = _('<big>Used space:</big> %s %s') % (used_space, u_type)
-        fs = _('<big>Free space:</big> %s %s') % (free_space, f_type)
+        t = _('<span foreground="%s"><b>%s</b></span>' % \
+                                      (FILL_COLOR, self._get_info_string('t')))
+
+        ts = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
+               (STROKE_COLOR, self._get_info_string('ts'), total_space, t_type)
+
+        us = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
+                (STROKE_COLOR, self._get_info_string('us'), used_space, u_type)
+
+        fs = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
+                (STROKE_COLOR, self._get_info_string('fs'), free_space, f_type)
+
         info = t + '\n' + ts + '\n' + us + '\n' + fs
 
         self.area.text = info
 
         self.area.queue_draw()
+
+    def _get_info_string(self, string):
+        if string == 't':
+            return _('Info:')
+
+        elif string == 'ts':
+            return _('Total space:')
+
+        elif string == 'us':
+            return _('Used space:')
+
+        elif string == 'fs':
+            return _('Free space:')
 
     def _resize_chart(self):
         sx, sy, width, height = self.area.get_allocation()
@@ -195,7 +220,6 @@ class Area(gtk.DrawingArea):
 
         # Write the info
         self.layout.set_markup(self.text)
-        lw = (self.layout.get_pixel_extents()[1][2] * len(self.text)) / 1000
         lh = (self.layout.get_pixel_extents()[1][2] * 3) / 1000
 
         lx = x + cw
