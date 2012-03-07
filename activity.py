@@ -41,7 +41,7 @@ sys.path.insert(0, path)
 import utils
 from charts import Chart
 
-logger = logging.getLogger('AnalizeJournal-activity')
+logger = logging.getLogger('AnalyzeJournal-activity')
 logger.setLevel(logging.DEBUG)
 logging.basicConfig()
 
