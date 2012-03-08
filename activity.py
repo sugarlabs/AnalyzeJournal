@@ -28,12 +28,14 @@ import pango
 from gettext import gettext as _
 
 from sugar import env
+from sugar import profile
 
 from sugar.activity import activity
-from sugar.activity.widgets import ActivityToolbarButton
+from sugar.bundle.activitybundle import ActivityBundle
 from sugar.activity.widgets import StopButton
 from sugar.graphics.toolbarbox import ToolbarBox
 from sugar.graphics.toolbutton import ToolButton
+from sugar.graphics.icon import Icon
 
 path = os.path.join(os.getenv('HOME'), 'Activities', 'SimpleGraph.activity')
 sys.path.insert(0, path)
@@ -52,15 +54,34 @@ STROKE_COLOR = utils.get_user_color()[1]
 class AnalyzeJournal(activity.Activity):
 
     def __init__(self, handle):
-        activity.Activity.__init__(self, handle, True)
+        activity.Activity.__init__(self, handle, False)
 
         self.max_participants = 1
 
         # TOOLBARS
         toolbarbox = ToolbarBox()
 
-        activity_button = ActivityToolbarButton(self)
+        color = profile.get_color()
+
+        activity_button = ToolButton(self)
+        bundle = ActivityBundle(activity.get_bundle_path())
+        icon = Icon(file=bundle.get_icon(), xo_color=color)
+        activity_button.set_icon_widget(icon)
+
         toolbarbox.toolbar.insert(activity_button, 0)
+        activity_button.show()
+
+        title_entry = gtk.Label()
+        title_entry.set_text(_('Analyze Journal activity'))
+        item = gtk.ToolItem()
+        item.add(title_entry)
+        toolbarbox.toolbar.insert(item, -1)
+        title_entry.show()
+
+        separator = gtk.SeparatorToolItem()
+        separator.set_draw(True)
+        separator.set_expand(False)
+        toolbarbox.toolbar.insert(separator, -1)
 
         update_btn = ToolButton('gtk-refresh')
         update_btn.connect('clicked', self._analyze)
