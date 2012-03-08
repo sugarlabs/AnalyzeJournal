@@ -67,13 +67,6 @@ class AnalyzeJournal(activity.Activity):
         toolbarbox.toolbar.insert(activity_button, 0)
         activity_button.show()
 
-        title_entry = gtk.Label()
-        title_entry.set_text(_('Analyze Journal activity'))
-        item = gtk.ToolItem()
-        item.add(title_entry)
-        toolbarbox.toolbar.insert(item, -1)
-        title_entry.show()
-
         separator = gtk.SeparatorToolItem()
         separator.set_draw(True)
         separator.set_expand(False)
