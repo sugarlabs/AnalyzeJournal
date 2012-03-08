@@ -41,7 +41,7 @@ from charts import Chart
 
 _logger = logging.getLogger('AnalyzeJournal-activity')
 _logger.setLevel(logging.DEBUG)
-_logging.basicConfig()
+logging.basicConfig()
 
 _FILL_COLOR = utils.get_user_color()[0]
 _STROKE_COLOR = utils.get_user_color()[1]
