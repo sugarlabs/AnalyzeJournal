@@ -19,7 +19,6 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import gtk
-import sys
 import os
 import statvfs
 import logging
@@ -36,9 +35,6 @@ from sugar.activity.widgets import StopButton
 from sugar.graphics.toolbarbox import ToolbarBox
 from sugar.graphics.toolbutton import ToolButton
 from sugar.graphics.icon import Icon
-
-path = os.path.join(os.getenv('HOME'), 'Activities', 'SimpleGraph.activity')
-sys.path.insert(0, path)
 
 import utils
 from charts import Chart
