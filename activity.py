@@ -36,6 +36,7 @@ from sugar.graphics.toolbarbox import ToolbarBox
 from sugar.graphics.toolbutton import ToolButton
 from sugar.graphics.icon import Icon
 
+import help
 import utils
 from charts import Chart
 
@@ -80,6 +81,8 @@ class AnalyzeJournal(activity.Activity):
         separator.set_draw(False)
         separator.set_expand(True)
         toolbarbox.toolbar.insert(separator, -1)
+
+        help.create_help(toolbarbox.toolbar)
 
         stopbtn = StopButton(self)
         toolbarbox.toolbar.insert(stopbtn, -1)
@@ -132,16 +135,16 @@ class AnalyzeJournal(activity.Activity):
             used_space = self._get_GBs(used_space)
             u_type = 'GBs'
 
-        t = _('<span foreground="%s"><b>%s</b></span>' % \
-                                     (_FILL_COLOR, self._get_info_string('t')))
+        t = '<span foreground="%s"><b>%s</b></span>' % \
+                                     (_FILL_COLOR, self._get_info_string('t'))
 
-        ts = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
+        ts = '<span foreground="%s"><b>%s</b></span> %s %s' % \
               (_STROKE_COLOR, self._get_info_string('ts'), total_space, t_type)
 
-        us = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
+        us = '<span foreground="%s"><b>%s</b></span> %s %s' % \
                (_STROKE_COLOR, self._get_info_string('us'), used_space, u_type)
 
-        fs = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
+        fs = '<span foreground="%s"><b>%s</b></span> %s %s' % \
                (_STROKE_COLOR, self._get_info_string('fs'), free_space, f_type)
 
         info = t + '\n' + ts + '\n' + us + '\n' + fs

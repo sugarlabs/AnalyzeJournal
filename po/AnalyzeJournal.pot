@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-24 22:11-0200\n"
+"POT-Creation-Date: 2012-03-08 02:34-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,25 +21,51 @@ msgstr ""
 msgid "Analyze Journal"
 msgstr ""
 
-#: activity.py:97
+#: helpbutton.py:36
+msgid "Help"
+msgstr ""
+
+#: help.py:11
+msgid "Description"
+msgstr ""
+
+#: help.py:12
+msgid ""
+"This activity gives you the possibility to graphically, the journal usage"
+msgstr ""
+
+#: help.py:13
+msgid "Usage"
+msgstr ""
+
+#: help.py:14
+msgid "In the area you can view the info"
+msgstr ""
+
+#: help.py:15
+msgid "You can update the data with this button"
+msgstr ""
+
+#: activity.py:114
 msgid "Free"
 msgstr ""
 
-#: activity.py:98
+#: activity.py:115
 msgid "Used"
 msgstr ""
 
-#: activity.py:121
-#, python-format
-msgid "Total space: %s %s"
+#: activity.py:158
+msgid "Info:"
 msgstr ""
 
-#: activity.py:122
-#, python-format
-msgid "Used space: %s %s"
+#: activity.py:161
+msgid "Total space:"
 msgstr ""
 
-#: activity.py:123
-#, python-format
-msgid "Free space: %s %s"
+#: activity.py:164
+msgid "Used space:"
+msgstr ""
+
+#: activity.py:167
+msgid "Free space:"
 msgstr ""
