@@ -39,12 +39,12 @@ from sugar.graphics.icon import Icon
 import utils
 from charts import Chart
 
-logger = logging.getLogger('AnalyzeJournal-activity')
-logger.setLevel(logging.DEBUG)
-logging.basicConfig()
+_logger = logging.getLogger('AnalyzeJournal-activity')
+_logger.setLevel(logging.DEBUG)
+_logging.basicConfig()
 
-FILL_COLOR = utils.get_user_color()[0]
-STROKE_COLOR = utils.get_user_color()[1]
+_FILL_COLOR = utils.get_user_color()[0]
+_STROKE_COLOR = utils.get_user_color()[1]
 
 
 class AnalyzeJournal(activity.Activity):
@@ -140,16 +140,16 @@ class AnalyzeJournal(activity.Activity):
             u_type = 'GBs'
 
         t = _('<span foreground="%s"><b>%s</b></span>' % \
-                                      (FILL_COLOR, self._get_info_string('t')))
+                                     (_FILL_COLOR, self._get_info_string('t')))
 
         ts = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
-               (STROKE_COLOR, self._get_info_string('ts'), total_space, t_type)
+              (_STROKE_COLOR, self._get_info_string('ts'), total_space, t_type)
 
         us = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
-                (STROKE_COLOR, self._get_info_string('us'), used_space, u_type)
+               (_STROKE_COLOR, self._get_info_string('us'), used_space, u_type)
 
         fs = _('<span foreground="%s"><b>%s</b></span> %s %s') % \
-                (STROKE_COLOR, self._get_info_string('fs'), free_space, f_type)
+               (_STROKE_COLOR, self._get_info_string('fs'), free_space, f_type)
 
         info = t + '\n' + ts + '\n' + us + '\n' + fs
 
@@ -188,7 +188,7 @@ class AnalyzeJournal(activity.Activity):
         total_space = self._get_MBs(total_space)
         used_space = total_space - free_space
 
-        logger.info('Free space: %s/%s MBs' % (free_space, total_space))
+        _logger.info('Free space: %s/%s MBs' % (free_space, total_space))
 
         return free_space, used_space, total_space
 
