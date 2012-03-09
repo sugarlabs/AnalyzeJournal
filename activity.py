@@ -37,15 +37,15 @@ from sugar.graphics.toolbutton import ToolButton
 from sugar.graphics.icon import Icon
 
 import help
-import utils
 from charts import Chart
 
 _logger = logging.getLogger('AnalyzeJournal-activity')
 _logger.setLevel(logging.DEBUG)
 logging.basicConfig()
 
-_FILL_COLOR = utils.get_user_color()[0]
-_STROKE_COLOR = utils.get_user_color()[1]
+color = profile.get_color()
+_FILL_COLOR = color.get_fill_color()
+_STROKE_COLOR = color.get_stroke_color()
 
 
 class AnalyzeJournal(activity.Activity):
@@ -57,8 +57,6 @@ class AnalyzeJournal(activity.Activity):
 
         # TOOLBARS
         toolbarbox = ToolbarBox()
-
-        color = profile.get_color()
 
         activity_button = ToolButton(self)
         bundle = ActivityBundle(activity.get_bundle_path())
