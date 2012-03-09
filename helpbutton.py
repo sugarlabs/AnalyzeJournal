@@ -40,7 +40,7 @@ class HelpButton(gtk.ToolItem):
 
         sw = gtk.ScrolledWindow()
         sw.set_size_request(int(gtk.gdk.screen_width() / 3),
-            gtk.gdk.screen_height() - style.GRID_CELL_SIZE * 3)
+            style.GRID_CELL_SIZE * 3)
         sw.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
 
         self._max_text_width = int(gtk.gdk.screen_width() / 3) - 20
