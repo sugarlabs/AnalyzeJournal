@@ -21,8 +21,8 @@ import math
 
 import cairo
 
-from pycha.color import ColorScheme, hex2rgb, DEFAULT_COLOR
-from pycha.utils import safe_unicode
+from sugarpycha.color import ColorScheme, hex2rgb, DEFAULT_COLOR
+from sugarpycha.utils import safe_unicode
 
 
 class Chart(object):
@@ -169,7 +169,7 @@ class Chart(object):
         if x_range_is_defined:
             self.minxval, self.maxxval = self.options.axis.x.range
         else:
-            xdata = [pair[0] for pair in reduce(lambda a, b: a+b, stores)]
+            xdata = [pair[0] for pair in reduce(lambda a, b: a + b, stores)]
             self.minxval = float(min(xdata))
             self.maxxval = float(max(xdata))
             if self.minxval * self.maxxval > 0 and self.minxval > 0:
@@ -185,7 +185,7 @@ class Chart(object):
         if y_range_is_defined:
             self.minyval, self.maxyval = self.options.axis.y.range
         else:
-            ydata = [pair[1] for pair in reduce(lambda a, b: a+b, stores)]
+            ydata = [pair[1] for pair in reduce(lambda a, b: a + b, stores)]
             self.minyval = float(min(ydata))
             self.maxyval = float(max(ydata))
             if self.minyval * self.maxyval > 0 and self.minyval > 0:
@@ -197,7 +197,7 @@ class Chart(object):
         else:
             self.yscale = 1.0 / self.yrange
 
-        if self.minyval * self.maxyval < 0: # different signs
+        if self.minyval * self.maxyval < 0:  # different signs
             self.origin = abs(self.minyval) * self.yscale
         else:
             self.origin = 0.0
@@ -365,7 +365,7 @@ class Chart(object):
         cx.line_to(x2, y2)
         cx.close_path()
         cx.stroke()
-
+        cx.set_source_rgb(*hex2rgb('#000000'))
         cx.select_font_face(self.options.axis.tickFont,
                             cairo.FONT_SLANT_NORMAL,
                             cairo.FONT_WEIGHT_NORMAL)
@@ -384,6 +384,7 @@ class Chart(object):
             y = -height / 2.0
             cx.move_to(x - xb, y - yb)
             cx.show_text(label)
+            cx.set_source_rgb(*hex2rgb(self.options.axis.lineColor))
             if self.debug:
                 cx.rectangle(x, y, width, height)
                 cx.stroke()
@@ -393,6 +394,7 @@ class Chart(object):
             y -= height / 2.0
             cx.move_to(x - xb, y - yb)
             cx.show_text(label)
+            cx.set_source_rgb(*hex2rgb(self.options.axis.lineColor))
             if self.debug:
                 cx.rectangle(x, y, width, height)
                 cx.stroke()
@@ -405,7 +407,7 @@ class Chart(object):
         y = self.layout.y_ticks.y + tick[0] * self.layout.y_ticks.h
 
         text_position = ((self.layout.y_tick_labels.x
-                          + self.layout.y_tick_labels.w / 2.0), y)
+                          + self.layout.y_tick_labels.w / 2.0 - 5), y)
 
         return self._renderTick(cx, tick,
                                 x, y,
@@ -419,7 +421,7 @@ class Chart(object):
         x = self.layout.x_ticks.x + tick[0] * self.layout.x_ticks.w
         y = self.layout.x_ticks.y
 
-        text_position = (x, (self.layout.x_tick_labels.y
+        text_position = (x, (self.layout.x_tick_labels.y + 5
                              + self.layout.x_tick_labels.h / 2.0))
 
         return self._renderTick(cx, tick,
@@ -493,7 +495,6 @@ class Chart(object):
             return
 
         cx.save()
-        cx.set_source_rgb(*hex2rgb(self.options.axis.lineColor))
         cx.set_line_width(self.options.axis.lineWidth)
 
         if not self.options.axis.y.hide:
@@ -504,6 +505,7 @@ class Chart(object):
             if self.options.axis.y.label:
                 self._renderYAxisLabel(cx, self.options.axis.y.label)
 
+            cx.set_source_rgb(*hex2rgb(self.options.axis.lineColor))
             self._renderYAxis(cx)
 
         if not self.options.axis.x.hide:
@@ -514,6 +516,7 @@ class Chart(object):
             if self.options.axis.x.label:
                 self._renderXAxisLabel(cx, self.options.axis.x.label)
 
+            cx.set_source_rgb(*hex2rgb(self.options.axis.lineColor))
             self._renderXAxis(cx)
 
         cx.restore()
@@ -534,7 +537,7 @@ class Chart(object):
             x = (self.layout.title.x
                  + self.layout.title.w / 2.0
                  - title_width / 2.0)
-            y = self.layout.title.y - extents[1]
+            y = self.layout.title.y - extents[1] - 10
 
             cx.move_to(x, y)
             cx.show_text(title)
@@ -651,14 +654,14 @@ class Layout(object):
         self.chart = Area()
 
         self._areas = (
-            (self.title, (1, 126/255.0, 0)), # orange
-            (self.y_label, (41/255.0, 91/255.0, 41/255.0)), # grey
-            (self.x_label, (41/255.0, 91/255.0, 41/255.0)), # grey
-            (self.y_tick_labels, (0, 115/255.0, 0)), # green
-            (self.x_tick_labels, (0, 115/255.0, 0)), # green
-            (self.y_ticks, (229/255.0, 241/255.0, 18/255.0)), # yellow
-            (self.x_ticks, (229/255.0, 241/255.0, 18/255.0)), # yellow
-            (self.chart, (75/255.0, 75/255.0, 1.0)), # blue
+            (self.title, (1, 126 / 255.0, 0)),  # orange
+            (self.y_label, (41 / 255.0, 91 / 255.0, 41 / 255.0)),  # grey
+            (self.x_label, (41 / 255.0, 91 / 255.0, 41 / 255.0)),  # grey
+            (self.y_tick_labels, (0, 115 / 255.0, 0)),  # green
+            (self.x_tick_labels, (0, 115 / 255.0, 0)),  # green
+            (self.y_ticks, (229 / 255.0, 241 / 255.0, 18 / 255.0)),  # yellow
+            (self.x_ticks, (229 / 255.0, 241 / 255.0, 18 / 255.0)),  # yellow
+            (self.chart, (75 / 255.0, 75 / 255.0, 1.0)),  # blue
             )
 
     def update(self, cx, options, width, height, xticks, yticks):
@@ -758,7 +761,7 @@ class Layout(object):
         if not axis.hide:
             extents = [cx.text_extents(safe_unicode(
                         tick[1], options.encoding,
-                        ))[2:4] # get width and height as a tuple
+                        ))[2:4]  # get width and height as a tuple
                        for tick in ticks]
             if extents:
                 widths, heights = zip(*extents)
@@ -850,10 +853,10 @@ DEFAULT_OPTIONS = Option(
         bottom=10,
     ),
     stroke=Option(
-        color='#ffffff',
+        color='#000000',
         hide=False,
         shadow=True,
-        width=2
+        width=1
     ),
     yvals=Option(
         show=False,

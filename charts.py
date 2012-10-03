@@ -20,9 +20,9 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-import pycha.bar
-import pycha.line
-import pycha.pie
+import sugarpycha.bar
+import sugarpycha.line
+import sugarpycha.pie
 
 import cairo
 import gobject
@@ -49,7 +49,11 @@ class Chart(gobject.GObject):
 
         self.options = {
             'legend': {'hide': True},
+            'titleFontSize': 16,
             'axis': {
+                'tickFontSize': 12,
+                'labelFontSize': 14,
+                'lineColor': '#b3b3b3',
                 'x': {
                     'ticks': [dict(v=i, label=l[0]) for i,
                                                         l in enumerate(data)],
@@ -60,9 +64,12 @@ class Chart(gobject.GObject):
                     'label': 'Y',
                 }
             },
+            'stroke': {
+                'width': 3
+            },
             'background': {
                 'chartColor': '#FFFFFF',
-                'lineColor': '#d1e5ec'
+                'lineColor': '#CCCCCC'
             },
             'colorScheme': {
                 'name': 'gradient',
@@ -76,9 +83,9 @@ class Chart(gobject.GObject):
         """Set the chart color scheme"""
         self.options["colorScheme"]["args"] = {'initialColor': color}
 
-    def set_line_color(self, color='#d1e5ec'):
+    def set_line_color(self, color='#000000'):
         """Set the chart line color"""
-        self.options["background"]["lineColor"] = color
+        self.options["stroke"]["color"] = color
 
     def set_x_label(self, text="X"):
         """Set the X Label"""
@@ -92,7 +99,7 @@ class Chart(gobject.GObject):
         """Set chart type (vertical, horizontal, line, pie)"""
         self.type = type
 
-    def set_title(self, title="SimpleGraph Chart"):
+    def set_title(self, title="Chart"):
         """Set the chart title"""
         self.options["title"] = title
 
@@ -104,19 +111,24 @@ class Chart(gobject.GObject):
                                             self.height)
 
         if self.type == "vbar":
-            chart = pycha.bar.VerticalBarChart(self.surface, self.options)
+            chart = sugarpycha.bar.VerticalBarChart(self.surface, self.options)
 
         elif self.type == "hbar":
-            chart = pycha.bar.HorizontalBarChart(self.surface, self.options)
+            chart = sugarpycha.bar.HorizontalBarChart(self.surface,
+                                                      self.options)
 
         elif self.type == "line":
-            chart = pycha.line.LineChart(self.surface, self.options)
+            chart = sugarpycha.line.LineChart(self.surface, self.options)
 
         elif self.type == "pie":
             self.options["legend"] = {"hide": "False"}
-            chart = pycha.pie.PieChart(self.surface, self.options)
+            chart = sugarpycha.pie.PieChart(self.surface, self.options)
             self.dataSet = [(data[0],
                             [[0, data[1]]]) for data in sg.chart_data]
+
+        else:
+            chart = sugarpycha.bar.HorizontalBarChart(self.surface,
+                                                      self.options)
 
         chart.addDataset(self.dataSet)
         chart.render()
