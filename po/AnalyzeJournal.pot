@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-08 02:34-0200\n"
+"POT-Creation-Date: 2012-10-03 07:44-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,47 +25,163 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: help.py:11
-msgid "Description"
+#: activity.py:144
+msgid "Save as image"
 msgstr ""
 
-#: help.py:12
-msgid ""
-"This activity gives you the possibility to graphically, the journal usage"
+#: activity.py:153
+msgid "Read Freespace data"
 msgstr ""
 
-#: help.py:13
-msgid "Usage"
+#: activity.py:159
+msgid "Read Journal data"
 msgstr ""
 
-#: help.py:14
-msgid "In the area you can view the info"
+#: activity.py:165
+msgid "Read Turtle data"
 msgstr ""
 
-#: help.py:15
-msgid "You can update the data with this button"
+#: activity.py:176
+msgid "Vertical Bar Chart"
 msgstr ""
 
-#: activity.py:114
-msgid "Free"
+#: activity.py:183
+msgid "Horizontal Bar Chart"
 msgstr ""
 
-#: activity.py:115
-msgid "Used"
+#: activity.py:190
+msgid "Pie Chart"
 msgstr ""
 
-#: activity.py:158
-msgid "Info:"
+#: activity.py:206
+msgid "Fullscreen"
 msgstr ""
 
-#: activity.py:161
-msgid "Total space:"
+#: activity.py:394
+msgid "Invalid object"
 msgstr ""
 
-#: activity.py:164
-msgid "Used space:"
+#: activity.py:396
+#, python-format
+msgid "The selected object must be a %s file"
 msgstr ""
 
-#: activity.py:167
-msgid "Free space:"
+#: activity.py:399 activity.py:617
+msgid "Ok"
+msgstr ""
+
+#: activity.py:446
+msgid "Turtle"
+msgstr ""
+
+#: activity.py:536
+msgid "Label"
+msgstr ""
+
+#: activity.py:547
+msgid "Value"
+msgstr ""
+
+#: activity.py:612
+msgid "Invalid Value"
+msgstr ""
+
+#: activity.py:614
+msgid "The value must be a number (integer or decimal)"
+msgstr ""
+
+#: readers.py:41
+msgid "Free space"
+msgstr ""
+
+#: readers.py:42
+msgid "Used space"
+msgstr ""
+
+#: readers.py:144
+msgid "turtle"
+msgstr ""
+
+#: readers.py:144
+msgid "pen"
+msgstr ""
+
+#: readers.py:144
+msgid "number"
+msgstr ""
+
+#: readers.py:144
+msgid "flow"
+msgstr ""
+
+#: readers.py:144
+msgid "box"
+msgstr ""
+
+#: readers.py:145
+msgid "sensor"
+msgstr ""
+
+#: readers.py:145
+msgid "media"
+msgstr ""
+
+#: readers.py:145
+msgid "extras"
+msgstr ""
+
+#: readers.py:270
+msgid "other"
+msgstr ""
+
+#: charthelp.py:12
+msgid "Basic usage"
+msgstr ""
+
+#: charthelp.py:13
+msgid "First select data type:"
+msgstr ""
+
+#: charthelp.py:14
+msgid "The free space in the Journal;"
+msgstr ""
+
+#: charthelp.py:16
+msgid "The types of Sugar Activities you have used;"
+msgstr ""
+
+#: charthelp.py:18
+msgid "The types of blocks used in Turtle Art."
+msgstr ""
+
+#: charthelp.py:20
+msgid "The graph title is the same as the Activity title"
+msgstr ""
+
+#: charthelp.py:22
+msgid "You can change the type of graph:"
+msgstr ""
+
+#: charthelp.py:23
+msgid "Vertical bars"
+msgstr ""
+
+#: charthelp.py:24
+msgid "Horizontal bars"
+msgstr ""
+
+#: charthelp.py:25
+msgid "Lines"
+msgstr ""
+
+#: charthelp.py:26
+msgid "Pie"
+msgstr ""
+
+#: charthelp.py:28
+msgid "Saving as an image"
+msgstr ""
+
+#: charthelp.py:29
+msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
