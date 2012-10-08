@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-03 07:44-0400\n"
+"PO-Revision-Date: 2012-10-08 16:55+0200\n"
+"Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: activity/activity.info:2
+msgid "Analyze Journal"
+msgstr "Analyse-journal"
+
+#: helpbutton.py:36
+msgid "Help"
+msgstr "Hjælp"
+
+#: activity.py:144
+msgid "Save as image"
+msgstr "Gem som et billede"
+
+#: activity.py:153
+msgid "Read Freespace data"
+msgstr "Læs friplads-data"
+
+#: activity.py:159
+msgid "Read Journal data"
+msgstr "Læs Journal-data"
+
+#: activity.py:165
+msgid "Read Turtle data"
+msgstr "Læs Skildpadde-data"
+
+#: activity.py:176
+msgid "Vertical Bar Chart"
+msgstr "Lodret søjlediagram"
+
+#: activity.py:183
+msgid "Horizontal Bar Chart"
+msgstr "Vandret søjlediagram"
+
+#: activity.py:190
+msgid "Pie Chart"
+msgstr "Cirkeldiagram"
+
+#: activity.py:206
+msgid "Fullscreen"
+msgstr "Fuldskærm"
+
+#: activity.py:394
+msgid "Invalid object"
+msgstr "Ugyldigt objekt"
+
+#: activity.py:396
+#, python-format
+msgid "The selected object must be a %s file"
+msgstr "Det valgte objekt skal være en %s-fil"
+
+#: activity.py:399 activity.py:617
+msgid "Ok"
+msgstr "O.k."
+
+#: activity.py:446
+msgid "Turtle"
+msgstr "Skildpadde"
+
+#: activity.py:536
+msgid "Label"
+msgstr "Etikette"
+
+#: activity.py:547
+msgid "Value"
+msgstr "Værdi"
+
+#: activity.py:612
+msgid "Invalid Value"
+msgstr "Ugyldig værdi"
+
+#: activity.py:614
+msgid "The value must be a number (integer or decimal)"
+msgstr "Værdien skal være et tal (heltal eller decimal)"
+
+#: readers.py:41
+msgid "Free space"
+msgstr "Fri plads"
+
+#: readers.py:42
+msgid "Used space"
+msgstr "Anvendt plads"
+
+#: readers.py:144
+msgid "turtle"
+msgstr "skildpadde"
+
+#: readers.py:144
+msgid "pen"
+msgstr "pen"
+
+#: readers.py:144
+msgid "number"
+msgstr "tal"
+
+#: readers.py:144
+msgid "flow"
+msgstr "retning"
+
+#: readers.py:144
+msgid "box"
+msgstr "boks"
+
+#: readers.py:145
+msgid "sensor"
+msgstr "sensor"
+
+#: readers.py:145
+msgid "media"
+msgstr "medie"
+
+#: readers.py:145
+msgid "extras"
+msgstr "tilbehør"
+
+#: readers.py:270
+msgid "other"
+msgstr "andet"
+
+#: charthelp.py:12
+msgid "Basic usage"
+msgstr "Grundlæggende brug"
+
+#: charthelp.py:13
+msgid "First select data type:"
+msgstr "Vælg først datatype:"
+
+#: charthelp.py:14
+msgid "The free space in the Journal;"
+msgstr "Den fri plads i journalen;"
+
+#: charthelp.py:16
+msgid "The types of Sugar Activities you have used;"
+msgstr "De typer Sugar-aktiviteter du har anvendt;"
+
+#: charthelp.py:18
+msgid "The types of blocks used in Turtle Art."
+msgstr "De typer af blokke som er anvendt i Skildpadde-kunst."
+
+#: charthelp.py:20
+msgid "The graph title is the same as the Activity title"
+msgstr "Graf-titlen er den samme som aktivitetstitlen"
+
+#: charthelp.py:22
+msgid "You can change the type of graph:"
+msgstr "Du kan ændre graftypen:"
+
+#: charthelp.py:23
+msgid "Vertical bars"
+msgstr "Lodrette søjler"
+
+#: charthelp.py:24
+msgid "Horizontal bars"
+msgstr "Vandrette søjler"
+
+#: charthelp.py:25
+msgid "Lines"
+msgstr "Linjer"
+
+#: charthelp.py:26
+msgid "Pie"
+msgstr "Cirkel"
+
+#: charthelp.py:28
+msgid "Saving as an image"
+msgstr "Gem som et billede"
+
+#: charthelp.py:29
+msgid "In the activity toolbar you have button to save the graph as an image"
+msgstr ""
+"I værktøjslinjen for aktivitet har du en knap til at gemme grafen som et "
+"billede"
