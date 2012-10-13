@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-03 07:44-0400\n"
-"PO-Revision-Date: 2012-10-08 01:09+0200\n"
+"POT-Creation-Date: 2012-10-04 00:32-0400\n"
+"PO-Revision-Date: 2012-10-13 09:25+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en_GB\n"
@@ -17,13 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
 msgstr "Analyse Journal"
 
-#: helpbutton.py:36
-msgid "Help"
-msgstr "Help"
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "chart of Sugar Journal activity"
+msgstr "chart of Sugar Journal activity"
 
 #: activity.py:144
 msgid "Save as image"
@@ -90,50 +91,6 @@ msgstr "Invalid Value"
 msgid "The value must be a number (integer or decimal)"
 msgstr "The value must be a number (integer or decimal)"
 
-#: readers.py:41
-msgid "Free space"
-msgstr "Free space"
-
-#: readers.py:42
-msgid "Used space"
-msgstr "Used space"
-
-#: readers.py:144
-msgid "turtle"
-msgstr "turtle"
-
-#: readers.py:144
-msgid "pen"
-msgstr "pen"
-
-#: readers.py:144
-msgid "number"
-msgstr "number"
-
-#: readers.py:144
-msgid "flow"
-msgstr "flow"
-
-#: readers.py:144
-msgid "box"
-msgstr "box"
-
-#: readers.py:145
-msgid "sensor"
-msgstr "sensor"
-
-#: readers.py:145
-msgid "media"
-msgstr "media"
-
-#: readers.py:145
-msgid "extras"
-msgstr "extras"
-
-#: readers.py:270
-msgid "other"
-msgstr "other"
-
 #: charthelp.py:12
 msgid "Basic usage"
 msgstr "Basic usage"
@@ -185,3 +142,51 @@ msgstr "Saving as an image"
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr "In the activity toolbar you have button to save the graph as an image"
+
+#: helpbutton.py:36
+msgid "Help"
+msgstr "Help"
+
+#: readers.py:41
+msgid "Free space"
+msgstr "Free space"
+
+#: readers.py:42
+msgid "Used space"
+msgstr "Used space"
+
+#: readers.py:144
+msgid "turtle"
+msgstr "turtle"
+
+#: readers.py:144
+msgid "pen"
+msgstr "pen"
+
+#: readers.py:144
+msgid "number"
+msgstr "number"
+
+#: readers.py:144
+msgid "flow"
+msgstr "flow"
+
+#: readers.py:144
+msgid "box"
+msgstr "box"
+
+#: readers.py:145
+msgid "sensor"
+msgstr "sensor"
+
+#: readers.py:145
+msgid "media"
+msgstr "media"
+
+#: readers.py:145
+msgid "extras"
+msgstr "extras"
+
+#: readers.py:270
+msgid "other"
+msgstr "other"
