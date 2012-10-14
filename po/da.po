@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-03 07:44-0400\n"
+"POT-Creation-Date: 2012-10-04 00:32-0400\n"
 "PO-Revision-Date: 2012-10-08 16:55+0200\n"
 "Last-Translator: Aputsiaq Niels <aj@isit.gl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
+#. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
 msgstr "Analyse-journal"
 
-#: helpbutton.py:36
-msgid "Help"
-msgstr "Hjælp"
+#. TRANS: "summary" option from activity.info file
+#. TRANS: "description" option from activity.info file
+msgid "chart of Sugar Journal activity"
+msgstr ""
 
 #: activity.py:144
 msgid "Save as image"
@@ -90,50 +91,6 @@ msgstr "Ugyldig værdi"
 msgid "The value must be a number (integer or decimal)"
 msgstr "Værdien skal være et tal (heltal eller decimal)"
 
-#: readers.py:41
-msgid "Free space"
-msgstr "Fri plads"
-
-#: readers.py:42
-msgid "Used space"
-msgstr "Anvendt plads"
-
-#: readers.py:144
-msgid "turtle"
-msgstr "skildpadde"
-
-#: readers.py:144
-msgid "pen"
-msgstr "pen"
-
-#: readers.py:144
-msgid "number"
-msgstr "tal"
-
-#: readers.py:144
-msgid "flow"
-msgstr "retning"
-
-#: readers.py:144
-msgid "box"
-msgstr "boks"
-
-#: readers.py:145
-msgid "sensor"
-msgstr "sensor"
-
-#: readers.py:145
-msgid "media"
-msgstr "medie"
-
-#: readers.py:145
-msgid "extras"
-msgstr "tilbehør"
-
-#: readers.py:270
-msgid "other"
-msgstr "andet"
-
 #: charthelp.py:12
 msgid "Basic usage"
 msgstr "Grundlæggende brug"
@@ -187,3 +144,51 @@ msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
 "I værktøjslinjen for aktivitet har du en knap til at gemme grafen som et "
 "billede"
+
+#: helpbutton.py:36
+msgid "Help"
+msgstr "Hjælp"
+
+#: readers.py:41
+msgid "Free space"
+msgstr "Fri plads"
+
+#: readers.py:42
+msgid "Used space"
+msgstr "Anvendt plads"
+
+#: readers.py:144
+msgid "turtle"
+msgstr "skildpadde"
+
+#: readers.py:144
+msgid "pen"
+msgstr "pen"
+
+#: readers.py:144
+msgid "number"
+msgstr "tal"
+
+#: readers.py:144
+msgid "flow"
+msgstr "retning"
+
+#: readers.py:144
+msgid "box"
+msgstr "boks"
+
+#: readers.py:145
+msgid "sensor"
+msgstr "sensor"
+
+#: readers.py:145
+msgid "media"
+msgstr "medie"
+
+#: readers.py:145
+msgid "extras"
+msgstr "tilbehør"
+
+#: readers.py:270
+msgid "other"
+msgstr "andet"

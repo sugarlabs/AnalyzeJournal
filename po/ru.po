@@ -2,191 +2,191 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2012-10-14 04:27+0200\n"
-"Last-Translator: lite <litekok@gmail.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_CN\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Translate Toolkit 1.7.0\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr "分析日志"
+msgstr ""
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr "Sugar日志活动的图表"
+msgstr ""
 
 #: activity.py:144
 msgid "Save as image"
-msgstr "保存为图像"
+msgstr ""
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr "读取剩余空间的数据"
+msgstr ""
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr "读取日志数据"
+msgstr ""
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr "读取海龟数据"
+msgstr ""
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr "垂直条形图"
+msgstr ""
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr "水平条形图"
+msgstr ""
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr "饼图"
+msgstr ""
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr "全屏显示"
+msgstr ""
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr "无效的对象"
+msgstr ""
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr "选择的对象必须是一个 %s 文件"
+msgstr ""
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr "确定"
+msgstr ""
 
 #: activity.py:446
 msgid "Turtle"
-msgstr "海龟"
+msgstr ""
 
 #: activity.py:536
 msgid "Label"
-msgstr "标签"
+msgstr ""
 
 #: activity.py:547
 msgid "Value"
-msgstr "数值"
+msgstr ""
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr "无效的数值"
+msgstr ""
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr "该值必须是数字（整数或小数）"
+msgstr ""
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr "基本用法"
+msgstr ""
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr "首先选择数据类型："
+msgstr ""
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr "日志中的剩余空间;"
+msgstr ""
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr "您用过的Sugar活动的类型;"
+msgstr ""
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr "海龟艺术中使用的拼块的类型。"
+msgstr ""
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr "图表标题和活动标题是一样的"
+msgstr ""
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr "您可以更改图表的类型："
+msgstr ""
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr "垂直条"
+msgstr ""
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr "水平条"
+msgstr ""
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr "线条"
+msgstr ""
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr "饼"
+msgstr ""
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr "保存为图像"
+msgstr ""
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr "活动中工具栏上的按钮可以把图表保存为图像"
+msgstr ""
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr "帮助"
+msgstr ""
 
 #: readers.py:41
 msgid "Free space"
-msgstr "剩余空间"
+msgstr ""
 
 #: readers.py:42
 msgid "Used space"
-msgstr "已用空间"
+msgstr ""
 
 #: readers.py:144
 msgid "turtle"
-msgstr "海龟"
+msgstr ""
 
 #: readers.py:144
 msgid "pen"
-msgstr "笔"
+msgstr ""
 
 #: readers.py:144
 msgid "number"
-msgstr "数字"
+msgstr ""
 
 #: readers.py:144
 msgid "flow"
-msgstr "流动"
+msgstr ""
 
 #: readers.py:144
 msgid "box"
-msgstr "箱子"
+msgstr ""
 
 #: readers.py:145
 msgid "sensor"
-msgstr "传感器"
+msgstr ""
 
 #: readers.py:145
 msgid "media"
-msgstr "媒体"
+msgstr ""
 
 #: readers.py:145
 msgid "extras"
-msgstr "额外的"
+msgstr ""
 
 #: readers.py:270
 msgid "other"
-msgstr "其他的"
+msgstr ""
