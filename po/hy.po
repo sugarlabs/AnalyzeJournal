@@ -2,191 +2,193 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-04-22 20:35+0200\n"
+"Last-Translator: anushnur <anush.mkrtchyan@ca1492.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "Վերլուծել Մատյանը"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "Sugar Մատյան գործունեության աղյուսակ"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "Պահպանել որպես պատկեր"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Ընթերցել Ազատ տարածության տվյալները"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Ընթերցել Մատյանի տվյալները"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Ընթերցել Կրիայի տվյալները"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Ուղղահայաց Սյունակի Գրաֆիկ"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Հորիզոնական Սյունակի Գրաֆիկ"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Կարկանդակի Աղյուսակ"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Էկրանի չափով"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Անվավեր առարկա"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "Ընտրված առարկան պետք է լինի  %s ֆայլ"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Լավ"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Կրիա"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Պիտակ"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Արժեք"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Անվավեր Արժեք"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "Արժեքը պետք է լինի թվական (ամբողջական կամ տասնորդական)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Հիմնական կիրառումը"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Առաջինը ընտրեք տվյալների տեսակը`"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "Ազատ տարածքը Մատյանում"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Sugar Գործունեությունների տեսակները, որոնք դու օգտագործել ես,"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "Turtle Art-ում գործածված բլոկերի տեսակը"
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "Գծագրի վերնագիրը նույնն է ինչպես Գործունեությանը"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Կարող ես փոխոլ գծագրի տեսակը"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Ուղղահայաց սյունակներ"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Հորիզոնական սյունակներ"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Տողեր"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Կարկանդակ"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Պահպանում է որպես պատկեր"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
+"Գործունեության գործիքաշարում կա կոճակ, որի օգնությամբ կարող ես պահպանել "
+"գծագիրը որպես պատկեր"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Օգնություն"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Ազատ Տարածություն"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Օգտագործված տարածություն"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "Կրիա"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "գրիչ"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "համար"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "հոսք"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "տուփ"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "զգայակ"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "լրատվամիջոց"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "ավելադիրներ"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "այլ"
