@@ -2,191 +2,197 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-09-20 10:22+0000\n"
+"Last-Translator: Robert <rbuj@fedoraproject.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1442744531.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "Anàlisi del diari"
 
+# well-spelled: Sugar
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "gràfic de l'activitat del diari del Sugar"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "Desa com una imatge"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Llegeix les dades de l'espai lliure"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Llegeix les dades del diari"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Llegeix les dades de la tortuga"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Gràfic de barres verticals"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Gràfic de barres horitzontals"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Gràfic circular"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Pantalla completa"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Objecte no vàlid"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "L'objecte seleccionat ha de ser un fitxer %s"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "D'acord"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Tortuga"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Valor no vàlid"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "El valor ha de ser un número (enter o decimal)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Ús bàsic"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Primer, seleccioneu el tipus de dades:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "L'espai lliure al diari;"
 
+# well-spelled: Sugar
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Els tipus de les activitats de Sugar que heu utilitzat;"
 
+# well-spelled: Turtle, Art
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "El tipus de blocs que s'utilitzen al Turtle Art."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "El títol del gràfic és el mateix que el títol de l'activitat"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Podeu canviar el tipus de gràfic:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Barres verticals"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Barres horitzontals"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Línies"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Circular"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Desar-ho com una imatge"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
+"En la barra d'eines de l'activitat, teniu un botó per desar el gràfic com "
+"una imatge"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Espai lliure"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Espai utilitzat"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "tortuga"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "llapis"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "número"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "flux"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "requadre"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "sensor"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "mitjà"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "extres"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "altres"
