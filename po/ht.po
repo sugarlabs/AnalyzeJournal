@@ -2,191 +2,192 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-03-11 17:07+0000\n"
+"Last-Translator: Blondel <blondel.md@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ht\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1457716058.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "Analize Jounal"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "Detay sou Aktivite Jounal Sugar"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "Anregistre antanke imaj"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Li done sou espas ki pa itilize"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Li done Jounal yo"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Li done Turtle yo"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Dyagram avèk Baton Kanpe"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Dyagram avèk Baton Kouche"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Dyagram Won"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Ekran plen"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Objè pa bon"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "Objè ki seleksyone a dwe yon fichye %s"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Turtle"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Enfòmasyon"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Valè"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Valè a pa bon"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "Valè a dwe yon chif (nòmal oubyen ak vigil"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Itilizasyon de baz"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Fòm done ki chwazi"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "Espas ki pa itilize nan Jounal la;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Fòm Aktivite Sugar ou te itilize;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "Fòm blòk ou te itilize nan Turtle Art."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "Dyagram lan gen menm non ak Aktivite a"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Ou ka chanje fòm dyagram:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Baton kanpe"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Baton kouche"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Liy"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Won"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Anrejistre antanke imaj"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr ""
+msgstr "Nan espas zouti aktivite a, ou ka anrejistre dyagram lan antanke imaj"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Èd"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Espas ki pa itilize"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Espas ki itilize"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "turtle"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "pen"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "chif"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "flow"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "bwat"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "detektè"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "medya"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "Anplis"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "Lòt"

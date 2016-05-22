@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-08-23 23:40+0000\n"
+"Last-Translator: emmergv <emmergv@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1440373206.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -28,7 +29,7 @@ msgstr ""
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "จัดเก็บภาพ"
 
 #: activity.py:153
 msgid "Read Freespace data"
@@ -56,11 +57,11 @@ msgstr ""
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "เต็มจอ"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "วัตถุไม่ถูกต้อง"
 
 #: activity.py:396
 #, python-format
@@ -69,15 +70,15 @@ msgstr ""
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "ตกลง"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "เต่า"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "ป้าย"
 
 #: activity.py:547
 msgid "Value"

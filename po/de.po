@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-12-28 23:25+0000\n"
+"Last-Translator: mikabeckerich <beckerichmika@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1451345120.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -52,15 +53,15 @@ msgstr ""
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Tortendiagramm"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Vollbild"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Ungültiges Objekt"
 
 #: activity.py:396
 #, python-format
@@ -69,31 +70,31 @@ msgstr ""
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Schildkröte"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Beschriftung"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Wert"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Ungültiger Wert"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "Der Wert muss eine Nummer sein (Ganze Zahl oder Dezimalzahl)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Grundlegende Bedienung"
 
 #: charthelp.py:13
 msgid "First select data type:"
@@ -129,51 +130,53 @@ msgstr ""
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Zeilen"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Torte"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Als Bild speichern"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
+"In der Aktivitäten-Toolbar hast Du einen Button um diese Grafik als Bild zu "
+"speichern"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Hilfe"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Freier Speicherplatz"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Belegter Speicherplatz"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "Schildkröte"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "Stift"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "Nummer"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "Fluss"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "Box"
 
 #: readers.py:145
 msgid "sensor"
