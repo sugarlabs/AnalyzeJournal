@@ -2,191 +2,193 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-10-30 13:08+0000\n"
+"Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1446210508.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "Аналіз журналу"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "діаграма журналу діяльності Sugar"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "Зберегти як малюнок"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Читати дані про вільне місце"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Читати дані Журналу"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Читати дані Черепахи"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Стовпчикова діаграма"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Лінійчаста діаграма"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Секторна діаграма"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "На весь екран"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Неправильний об'єкт"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "Вибраний об'єкт має бути %s файлом"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Гаразд"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Черепаха"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Підпис"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Значення"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Неправильне значення"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "Значення має бути числом (цілим або десятковим дробом)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Основи використання"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Спочатку вибери тип даних:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "Вільне місце в Журналі;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Типи використаних занять Sugar;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "Типи блоків, використаних у Черепашковому малюванні."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "Заголовок графіка збігається з заголовком заняття"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Можна змінити тип графіка:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Вертикальні смуги"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Горизонтальні смуги"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Лінії"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Кругова діаграма"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Збереження як малюнка"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr ""
+msgstr "На панелі заняття є кнопка для збереження графіка як малюнка"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Довідка"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Вільний простір"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Використаний простір"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "черепаха"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "ручка"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "номер"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "потік"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "коробка"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "датчик"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "носій"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "додаткове"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "інше"

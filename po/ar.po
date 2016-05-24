@@ -2,191 +2,209 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-03-01 05:02+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1456808521.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "جريدة التحليل"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "الرسم البياني لجريدة نشاط السكر"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "احفظ الصورة"
 
+# اقرأ بيانات الحيز الفارغ 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "اقرأ بيانات المساحة الفارغة"
 
+# اقرأ معطيات السجل
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "اقرأ بيانات اليومية "
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "اقرأ بيانات الترتل "
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "الرسم البياني للعمود العمودي"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "الرسم البياني للعمود الأفقي"
 
+# رسم بياني دائري 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "الرسم البياني الدائري "
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "ملئ الشاشة "
 
+# كائن غير صالح 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "كائن خاطئ"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "يجب أن يكون الكائن المحدد ملف %s"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "حسنا "
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "ترتل "
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "عنوان "
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "القيمة "
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "قيمة باطلة"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "يجب أن تكون القيمة عددا (صحيح أو عشري)"
 
+# الاستخدام الرئيسي
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "الاستعمال الأساسي "
 
+# أولا حدد نوع المستندات : 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "أولا حدد نوع البيانات :"
 
+# الحيز الفارغ في الجريدة 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "الحيز الفارغ في اليومية، "
 
+# أنواع نشاطات السكر المستعملة هي : 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "أنواع نشاطات السكر التي قد استعملتها "
 
+# أنواع القطع المستعملة في فن السلحفاة
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "أنواع الكتل المستخدمة في فن السلحفاة "
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "عنوان الرسم البياني هو نفسه عنوان النشاط "
 
+# يمكن استبدال نوع المخطط : 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "يمكنك تغير نوع الرسم البياني : "
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "الأعمدة العمودية "
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "الأعمدة الأفقية "
 
+# السطور 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "الخطوط "
 
+# فطيرة 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "الفطيرة "
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "الحفظ كصورة "
 
+# هناك زر في شريط أدوات النشاطات يمكنك من حفظ الصورة كرسم بياني 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr ""
+msgstr "يوجد لديك في شريط أدوات النشاطات زر لحفظ الصورة كرسم بياني "
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "المساعدة"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "الحيز الفارغ "
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "الحيز المستخدم "
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "السلحفاة "
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "قلم جاف  "
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "عدد "
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "الدفق "
 
+# الصندوق 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "الخانة "
 
+# جهاز الاستشعار 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "المجس "
 
+# وسائل الإعلام 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "الوسائط "
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "الإضافات "
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "أخرى "
