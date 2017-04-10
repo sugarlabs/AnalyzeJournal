@@ -2,191 +2,194 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-10-26 07:32+0000\n"
+"Last-Translator: Besnik_b <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1477467142.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "Analizoni Ditarin"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "grafik i veprimtarisë te Ditari Sugar"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "Ruaje si pamje"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Lexoni të dhëna mbi Hapësirën e lirë"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Lexoni të dhëna Ditari"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Lexoni të dhëna mbi Breshkën"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Grafik Me Shtylla Vertikale"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Grafik Me Shtylla Horizontale"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Grafik Rrethor"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Sa krejt ekrani"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Objekt i pavlefshëm"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "Objekti i përzgjedhur duhet të jetë një kartelë %s"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Breshka"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Etiketë"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Vlerë"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Vlerë e pavlefshme"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "Vlera duhet të jetë një numër (i plotë ose dhjetor)."
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Përdorimi i thjeshtë"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Së pari përzgjidhni lloj të dhënash:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "Hapësira e lirë në Ditar;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Llojet e Veprimtarive Sugar që keni përdorur;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "Llojet e blloqeve të përdorur te Art Breshke."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "Titulli i grafikut është i njëjtë me atë të Veprimtarisë"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Llojin e grafikut mund ta ndryshoni:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Shtylla vertikale"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Shtylla horizontale"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Rreshta"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Rrethore"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Po ruhet si pamje"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
+"Te paneli i veprimtarive gjendet një buton për ta ruajtur grafikun si një "
+"pamje"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Ndihmë"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Hapësirë e lirë"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Hapësirë e përdorur"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "breshka"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "penë"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "numër"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "<"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "kuti"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "ndijues"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "media"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "ekstra"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "tjetër"
