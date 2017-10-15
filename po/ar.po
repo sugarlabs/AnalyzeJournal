@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-03-01 05:02+0000\n"
+"PO-Revision-Date: 2017-05-24 06:03+0000\n"
 "Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ar\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1456808521.000000\n"
+"X-POOTLE-MTIME: 1495605815.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -40,11 +40,11 @@ msgstr "اقرأ بيانات المساحة الفارغة"
 # اقرأ معطيات السجل
 #: activity.py:159
 msgid "Read Journal data"
-msgstr "اقرأ بيانات اليومية "
+msgstr "اقرأ بيانات اليومية"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr "اقرأ بيانات الترتل "
+msgstr "اقرأ بيانات الترتل"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
@@ -57,11 +57,11 @@ msgstr "الرسم البياني للعمود الأفقي"
 # رسم بياني دائري 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr "الرسم البياني الدائري "
+msgstr "الرسم البياني الدائري"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr "ملئ الشاشة "
+msgstr "ملئ الشاشة"
 
 # كائن غير صالح 
 #: activity.py:394
@@ -75,19 +75,19 @@ msgstr "يجب أن يكون الكائن المحدد ملف %s"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr "حسنا "
+msgstr "حسنا"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr "ترتل "
+msgstr "ترتل"
 
 #: activity.py:536
 msgid "Label"
-msgstr "عنوان "
+msgstr "عنوان"
 
 #: activity.py:547
 msgid "Value"
-msgstr "القيمة "
+msgstr "القيمة"
 
 #: activity.py:612
 msgid "Invalid Value"
@@ -100,7 +100,7 @@ msgstr "يجب أن تكون القيمة عددا (صحيح أو عشري)"
 # الاستخدام الرئيسي
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr "الاستعمال الأساسي "
+msgstr "الاستعمال الأساسي"
 
 # أولا حدد نوع المستندات : 
 #: charthelp.py:13
@@ -110,53 +110,53 @@ msgstr "أولا حدد نوع البيانات :"
 # الحيز الفارغ في الجريدة 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr "الحيز الفارغ في اليومية، "
+msgstr "الحيز الفارغ في اليومية،"
 
 # أنواع نشاطات السكر المستعملة هي : 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr "أنواع نشاطات السكر التي قد استعملتها "
+msgstr "أنواع نشاطات السكر التي قد استعملتها"
 
 # أنواع القطع المستعملة في فن السلحفاة
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr "أنواع الكتل المستخدمة في فن السلحفاة "
+msgstr "أنواع الكتل المستخدمة في فن السلحفاة"
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr "عنوان الرسم البياني هو نفسه عنوان النشاط "
+msgstr "عنوان الرسم البياني هو نفسه عنوان النشاط"
 
 # يمكن استبدال نوع المخطط : 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr "يمكنك تغير نوع الرسم البياني : "
+msgstr "يمكنك تغير نوع الرسم البياني :"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr "الأعمدة العمودية "
+msgstr "الأعمدة العمودية"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr "الأعمدة الأفقية "
+msgstr "الأعمدة الأفقية"
 
 # السطور 
 #: charthelp.py:25
 msgid "Lines"
-msgstr "الخطوط "
+msgstr "الخطوط"
 
 # فطيرة 
 #: charthelp.py:26
 msgid "Pie"
-msgstr "الفطيرة "
+msgstr "الفطيرة"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr "الحفظ كصورة "
+msgstr "الحفظ كصورة"
 
 # هناك زر في شريط أدوات النشاطات يمكنك من حفظ الصورة كرسم بياني 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr "يوجد لديك في شريط أدوات النشاطات زر لحفظ الصورة كرسم بياني "
+msgstr "يوجد لديك في شريط أدوات النشاطات زر لحفظ الصورة كرسم بياني"
 
 #: helpbutton.py:36
 msgid "Help"
@@ -164,47 +164,47 @@ msgstr "المساعدة"
 
 #: readers.py:41
 msgid "Free space"
-msgstr "الحيز الفارغ "
+msgstr "الحيز الفارغ"
 
 #: readers.py:42
 msgid "Used space"
-msgstr "الحيز المستخدم "
+msgstr "الحيز المستخدم"
 
 #: readers.py:144
 msgid "turtle"
-msgstr "السلحفاة "
+msgstr "السلحفاة"
 
 #: readers.py:144
 msgid "pen"
-msgstr "قلم جاف  "
+msgstr "قلم جاف"
 
 #: readers.py:144
 msgid "number"
-msgstr "عدد "
+msgstr "عدد"
 
 #: readers.py:144
 msgid "flow"
-msgstr "الدفق "
+msgstr "الدفق"
 
 # الصندوق 
 #: readers.py:144
 msgid "box"
-msgstr "الخانة "
+msgstr "الخانة"
 
 # جهاز الاستشعار 
 #: readers.py:145
 msgid "sensor"
-msgstr "المجس "
+msgstr "المجس"
 
 # وسائل الإعلام 
 #: readers.py:145
 msgid "media"
-msgstr "الوسائط "
+msgstr "الوسائط"
 
 #: readers.py:145
 msgid "extras"
-msgstr "الإضافات "
+msgstr "الإضافات"
 
 #: readers.py:270
 msgid "other"
-msgstr "أخرى "
+msgstr "أخرى"

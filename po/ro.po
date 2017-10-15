@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-03-13 18:50+0000\n"
+"PO-Revision-Date: 2017-05-24 06:19+0000\n"
 "Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ro\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1457895045.000000\n"
+"X-POOTLE-MTIME: 1495606780.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -26,7 +26,7 @@ msgstr "Analiza de zi cu zi"
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr "Grafic al activității Sugar Journal"
+msgstr "grafic al activității Sugar Journal"
 
 #: activity.py:144
 msgid "Save as image"
@@ -180,7 +180,7 @@ msgstr "cutie"
 
 #: readers.py:145
 msgid "sensor"
-msgstr "Senzor"
+msgstr "senzor"
 
 #: readers.py:145
 msgid "media"
@@ -188,7 +188,7 @@ msgstr "mijloace"
 
 #: readers.py:145
 msgid "extras"
-msgstr "Suplimentar"
+msgstr "suplimentar"
 
 #: readers.py:270
 msgid "other"

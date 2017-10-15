@@ -2,191 +2,193 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-04-05 12:13+0000\n"
+"Last-Translator: Anders <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1491394439.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "Analysera dagbok"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "diagram över Sugar-dakboksaktivitet"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "Spara som bild"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Läs data över tillgängligt utrymme"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Läs dagboksdata"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Läs sköldpaddsdata"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Vertikalt stapeldiagram"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Horistontellt stapeldiagram"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Cirkeldiagram"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Helskärm"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Ogiltigt objekt"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "Det valda objektet måste vara en %s-fil"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Sköldpadda"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Etikett"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Värde"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Ogiltigt värde"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "Värdet måste vara ett tal (hel- eller decimaltal)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Grundläggande användning"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Välj först datatyp:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "Det tillgängliga utrymmet i dagboken;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Typerna av Sugar-aktiviteter som du har använt;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "Typen av klossar som använts i Sköldpaddskonst."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "Graftiteln är densamma som aktivitetstiteln"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Du kan ändra graftypen:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Vertikala staplar"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Horisontella staplar"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Linjer"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Cirkel"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Spara som en bild"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
+"I aktivitetsverktygsfältet har du en knapp för att spara grafen som en bild"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Hjälp"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Tillgängligt utrymme"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Använt utrymme"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "sköldpadda"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "penna"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "nummer"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "flöde"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "ruta"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "sensor"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "media"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "extra"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "annat"

@@ -7,66 +7,66 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-12-16 00:00+0000\n"
-"Last-Translator: unkuiri <unkuiri@gmail.com>\n"
+"PO-Revision-Date: 2017-10-07 06:56+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt\n"
+"Language: ach\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1481846425.000000\n"
+"X-POOTLE-MTIME: 1507359375.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr "Analisar Diário"
+msgstr "Yeyeko Janol"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr "gráfico de atividade do Diário do Sugar"
+msgstr "gin ma otime ducu me Sugar Janol iyoreyore"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr "Guardar como imagem"
+msgstr "Gwok macalo calere"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr "Ler dados de Espaço livre"
+msgstr "Kwan kop atye Ikananono"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr "Ler dados do Diário"
+msgstr "Kwan kop i Janol"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr "Ler dados da Tartaruga"
+msgstr "Kwan Tic ngec"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr "Gráfico de barras vertical"
+msgstr "Ba Cat Ariari"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr "Gráfico de barras horizontal"
+msgstr "Ba Cat Atiratir"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr "Gráfico circular"
+msgstr "Pai Cat"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr "Ecrã Completo"
+msgstr "Opong kaneno duc"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr "Objeto inválido"
+msgstr "Gin mo mapekonyo"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr "O objeto selecionado tem que ser um ficheiro %s"
+msgstr "Gin magiyero myero obed a %s pail"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
@@ -74,122 +74,121 @@ msgstr "Ok"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr "Tartaruga"
+msgstr "Opuk yipi madongo"
 
 #: activity.py:536
 msgid "Label"
-msgstr "Etiqueta"
+msgstr "Ket kop akwake ikome"
 
 #: activity.py:547
 msgid "Value"
-msgstr "Valor"
+msgstr "Ngec me ditere"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr "Valor inválido"
+msgstr "Ngec me ditere ma pe tye kakare"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr "O valor tem que ser um número (inteiro ou decimal)"
+msgstr ""
+"Ngec me ditere myero bed namba (en me wakwano akwana onyo duledule me apar)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr "Utilização básica"
+msgstr "Ticere ma pire tek"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr "Primeiro seleciona o tipo de dados:"
+msgstr "Meacel yer kodo lok:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr "O espaço livre no Diário;"
+msgstr "Kan atye nono iyi Janol;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr "Os tipos de Atividades Sugar que utilizaste;"
+msgstr "Kodo Jami atima me Sugar ame dong ityeko tic kwedgi oko;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr "Os tipos de blocos usados em TurtleBlocks."
+msgstr "Kodo blok ame gityeko tic kwede i Turtle Art."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr "O título do gráfico é o mesmo que o título de Atividade"
+msgstr "Nying grap tye ma rorom ki nying tic atia"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr "Podes mudar o tipo de gráfico:"
+msgstr "Itwero loko kit grap matye:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr "Barras verticais"
+msgstr "Bar matye atir malo"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr "Barras horizontais"
+msgstr "Bar matye ari ping"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr "Linhas"
+msgstr "Lain mapol"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr "Circular"
+msgstr "Yie ma opoke"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr "Guardando como imagem"
+msgstr "Tye ka gwoko ne calo cal"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr ""
-"Na barra de ferramentas de atividade tens um botão para guardar o gráfico "
-"como uma imagem"
+msgstr "Itulbaa me tic itye kwede mapeca me gwoko grap macalo tipone"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr "Ajuda"
+msgstr "Mi kony"
 
 #: readers.py:41
 msgid "Free space"
-msgstr "Espaço livre"
+msgstr "Kan anono"
 
 #: readers.py:42
 msgid "Used space"
-msgstr "Espaço utilizado"
+msgstr "Kan otio kede"
 
 #: readers.py:144
 msgid "turtle"
-msgstr "tartaruga"
+msgstr "opuk ma dongo"
 
 #: readers.py:144
 msgid "pen"
-msgstr "caneta"
+msgstr "alam"
 
 #: readers.py:144
 msgid "number"
-msgstr "número"
+msgstr "namba"
 
 #: readers.py:144
 msgid "flow"
-msgstr "seta"
+msgstr "mol"
 
 #: readers.py:144
 msgid "box"
-msgstr "caixa"
+msgstr "bokci"
 
 #: readers.py:145
 msgid "sensor"
-msgstr "sensor"
+msgstr "lamak ginoro mamite"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "makubu"
 
 #: readers.py:145
 msgid "extras"
-msgstr "extras"
+msgstr "mukatone"
 
 #: readers.py:270
 msgid "other"
-msgstr "outro"
+msgstr "mukene"

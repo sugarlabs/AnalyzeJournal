@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-04-04 16:23+0000\n"
+"Last-Translator: GeeKrypter <psramaraju@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1491323018.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -52,11 +53,11 @@ msgstr ""
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "पाई चार्ट"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "पूर्ण स्क्रीन"
 
 #: activity.py:394
 msgid "Invalid object"
@@ -69,7 +70,7 @@ msgstr ""
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "ठीक"
 
 #: activity.py:446
 msgid "Turtle"
@@ -77,11 +78,11 @@ msgstr ""
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "लेबल"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "मूल्य"
 
 #: activity.py:612
 msgid "Invalid Value"
@@ -145,7 +146,7 @@ msgstr ""
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "मदद"
 
 #: readers.py:41
 msgid "Free space"
@@ -161,11 +162,11 @@ msgstr ""
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "कलम"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "संख्या"
 
 #: readers.py:144
 msgid "flow"
@@ -173,7 +174,7 @@ msgstr ""
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "डिब्बा"
 
 #: readers.py:145
 msgid "sensor"

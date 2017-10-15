@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-04-20 21:20+0000\n"
-"Last-Translator: Anna <leonteva.anna.e@gmail.com>\n"
+"PO-Revision-Date: 2017-10-07 07:08+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1461187224.000000\n"
+"X-POOTLE-MTIME: 1507360117.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -103,7 +103,7 @@ msgstr "Сначала выберете тип данных:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr "Свободно в Журнале:"
+msgstr "Свободно в Журнале;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
@@ -119,7 +119,7 @@ msgstr "Название графика совпадает с названием
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr "Вы можете изменить вид графика"
+msgstr "Вы можете изменить вид графика:"
 
 #: charthelp.py:23
 msgid "Vertical bars"

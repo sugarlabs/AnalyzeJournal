@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-01-27 10:45+0000\n"
-"Last-Translator: jb33c <jb33c@hotmail.com>\n"
+"PO-Revision-Date: 2017-10-07 07:01+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1453891534.000000\n"
+"X-POOTLE-MTIME: 1507359669.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -33,161 +33,163 @@ msgstr "Enregistrer en tant qu'image"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Lire les données Freespace"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Lire le journal"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Lire les données Tortue"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Graphique en barres verticales"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Graphique en barres horizontales"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Graphique circulaire"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Plein écran"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Objet invalide"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "L'objet sélectionné doit être un fichier %s"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Tortue"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Étiquette"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Valeur"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Valeur non valable"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "La valeur doit être un nombre (entier ou décimal)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Usage de base"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Sélectionner d'abord le type de donnée:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "Espace libre dans le Journal"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Les types d'activités Sugar que vous avez utilisées ;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "Les types de blocs utilisés dans l'Art Tortue."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "Le titre du graphique est le même que celui de l'activité"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Vous pouvez changer le type de graphique:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Barres verticales"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Barres horizontales"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Lignes"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Graphique circulaire"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Sauvegarder en tant qu'image"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
+"Dans la barre d'outils, il y a un bouton pour enregistrer le graphique en "
+"tant qu'image"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Aide"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Espace libre"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Espace utilisé"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "tortue"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "crayon"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "nombre"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "flot"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "boite"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "capteur"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "média"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "extras"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "autre"
