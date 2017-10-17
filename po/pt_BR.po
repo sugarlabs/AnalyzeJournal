@@ -2,191 +2,192 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-08-02 17:52+0000\n"
+"Last-Translator: betoraposa <humberto.celiasilva@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.7.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1470160379.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "Analisar Diário"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "gráfico de atividade do Diário Sugar"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "Salvar como imagem"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "Ler dados do Freespace"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "Ler dados do Diário"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "Ler dados de Tartaruga"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "Gráfico de Barras Verticais"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "Gráfico de Barras Horizontais"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr ""
+msgstr "Gráfico de Pizza"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr ""
+msgstr "Tela cheia"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "Objeto inválido"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "O objeto selecionado deve ser um arquivo do tipo %s"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "Tartaruga"
 
 #: activity.py:536
 msgid "Label"
-msgstr ""
+msgstr "Rótulo"
 
 #: activity.py:547
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "Valor Inválido"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "O valor deve ser um número (inteiro ou decimal)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "Uso básico"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "Primeiro, selecione o tipo de dado:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "O espaço livre no Diário;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "Os tipos de Atividades Sugar que você tem usado;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "Os tipos de blocos usados em Tartaruga Arte."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "O título do gráfico é o mesmo que o título da Atividade"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "Você pode mudar o tipo de gráfico:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "Barras verticais"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "Barras horizontais"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "Linhas"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "Pizza"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "Salvando como imagem"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr ""
+msgstr "Na barra de atividades, há um botão para salvar o gráfico como imagem"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "Espaço livre"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "Espaço usado"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "tartaruga"
 
 #: readers.py:144
 msgid "pen"
-msgstr ""
+msgstr "caneta"
 
 #: readers.py:144
 msgid "number"
-msgstr ""
+msgstr "número"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "fluxo"
 
 #: readers.py:144
 msgid "box"
-msgstr ""
+msgstr "caixa"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "sensor"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "mídia"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "extras"
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "outros"

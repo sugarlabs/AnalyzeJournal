@@ -7,189 +7,188 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-12-16 00:00+0000\n"
-"Last-Translator: unkuiri <unkuiri@gmail.com>\n"
+"PO-Revision-Date: 2017-05-24 06:13+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt\n"
+"Language: gug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1481846425.000000\n"
+"X-POOTLE-MTIME: 1495606425.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr "Analisar Diário"
+msgstr "Analizar Diario (Hesa'ỹijo tapiaguáva)"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr "gráfico de atividade do Diário do Sugar"
+msgstr "moha'anga tembiapo tapiaguáva asuka"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr "Guardar como imagem"
+msgstr "Ñeñongatu ta'angáicha"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr "Ler dados de Espaço livre"
+msgstr "Ñemoñe'ẽ mba'ekuaarã pa'ũ rembyrépe"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr "Ler dados do Diário"
+msgstr "Ñemoñe'ẽ mba'ekuaarã tapiaguáva"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr "Ler dados da Tartaruga"
+msgstr "Ñemoñe'ẽ mba'ekuaarã karumbégui"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr "Gráfico de barras vertical"
+msgstr "Moha'anga mba'epuku oñembo'ýva"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr "Gráfico de barras horizontal"
+msgstr "Moha'anga mba'epuku oñenóva"
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr "Gráfico circular"
+msgstr "Moha'anga mbujapehe'ẽ"
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr "Ecrã Completo"
+msgstr "Tendahesaperã oĩmbáva"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr "Objeto inválido"
+msgstr "Mba'e ndoikóiva"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr "O objeto selecionado tem que ser um ficheiro %s"
+msgstr "The selected object must be a %s file"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr "Ok"
+msgstr "Oĩ porã"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr "Tartaruga"
+msgstr "Karumbe"
 
 #: activity.py:536
 msgid "Label"
-msgstr "Etiqueta"
+msgstr "Terarenda"
 
 #: activity.py:547
 msgid "Value"
-msgstr "Valor"
+msgstr "Tepy"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr "Valor inválido"
+msgstr "Tepy oiko'ỹva"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr "O valor tem que ser um número (inteiro ou decimal)"
+msgstr "Pe tepy papapy (oĩmbáva ha ipehẽva) (entero o decimal)"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr "Utilização básica"
+msgstr "Jepuru ndahasýiva"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr "Primeiro seleciona o tipo de dados:"
+msgstr "Tenonderã reiporavo mba'ekuaa ñemohenda:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr "O espaço livre no Diário;"
+msgstr "Pe pa'ũrembyre tapiaguávape"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr "Os tipos de Atividades Sugar que utilizaste;"
+msgstr "Pe tembiapó Asuka ñemohenda reipuruva'ekue"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr "Os tipos de blocos usados em TurtleBlocks."
+msgstr "Pe ñemohenda vore reipurúva TurtleBlocks pe."
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr "O título do gráfico é o mesmo que o título de Atividade"
+msgstr "Pe ñemyakãha moha'angápechaguaite ha'e ñemyakãha tembiaporã"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr "Podes mudar o tipo de gráfico:"
+msgstr "Ikatu remo'ambue moha'angá ñemohenda:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr "Barras verticais"
+msgstr "Mba'epuku oñembo'ýva"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr "Barras horizontais"
+msgstr "Mba'epuku oñenóva"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr "Linhas"
+msgstr "Rysýi"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr "Circular"
+msgstr "Mbujapehe'ẽ"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr "Guardando como imagem"
+msgstr "Ñeñongatu ta'angáicha"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
-"Na barra de ferramentas de atividade tens um botão para guardar o gráfico "
-"como uma imagem"
+"Pe tembiapo vorépe reguereko votõ reñongatu hag̃ua moha'anga ta'angàicha"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr "Ajuda"
+msgstr "Ñepytyvõ"
 
 #: readers.py:41
 msgid "Free space"
-msgstr "Espaço livre"
+msgstr "Pa'ũ ñemosã'ỹva"
 
 #: readers.py:42
 msgid "Used space"
-msgstr "Espaço utilizado"
+msgstr "Pa'ũ ojepurúva"
 
 #: readers.py:144
 msgid "turtle"
-msgstr "tartaruga"
+msgstr "karumbe"
 
 #: readers.py:144
 msgid "pen"
-msgstr "caneta"
+msgstr "haiha"
 
 #: readers.py:144
 msgid "number"
-msgstr "número"
+msgstr "papapy"
 
 #: readers.py:144
 msgid "flow"
-msgstr "seta"
+msgstr "hu'y"
 
 #: readers.py:144
 msgid "box"
-msgstr "caixa"
+msgstr "mba'eryru"
 
 #: readers.py:145
 msgid "sensor"
-msgstr "sensor"
+msgstr "andúva"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "pytyvõrã"
 
 #: readers.py:145
 msgid "extras"
-msgstr "extras"
+msgstr "ijykepegua"
 
 #: readers.py:270
 msgid "other"
-msgstr "outro"
+msgstr "ambue"

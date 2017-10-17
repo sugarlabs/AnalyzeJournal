@@ -7,180 +7,176 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-12-16 00:00+0000\n"
-"Last-Translator: unkuiri <unkuiri@gmail.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt\n"
+"Language: ibo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1481846425.000000\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr "Analisar Diário"
+msgstr ""
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr "gráfico de atividade do Diário do Sugar"
+msgstr ""
 
 #: activity.py:144
 msgid "Save as image"
-msgstr "Guardar como imagem"
+msgstr ""
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr "Ler dados de Espaço livre"
+msgstr ""
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr "Ler dados do Diário"
+msgstr ""
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr "Ler dados da Tartaruga"
+msgstr ""
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr "Gráfico de barras vertical"
+msgstr ""
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr "Gráfico de barras horizontal"
+msgstr ""
 
 #: activity.py:190
 msgid "Pie Chart"
-msgstr "Gráfico circular"
+msgstr ""
 
 #: activity.py:206
 msgid "Fullscreen"
-msgstr "Ecrã Completo"
+msgstr ""
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr "Objeto inválido"
+msgstr ""
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr "O objeto selecionado tem que ser um ficheiro %s"
+msgstr ""
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
-msgstr "Ok"
+msgstr ""
 
 #: activity.py:446
 msgid "Turtle"
-msgstr "Tartaruga"
+msgstr ""
 
 #: activity.py:536
 msgid "Label"
-msgstr "Etiqueta"
+msgstr ""
 
 #: activity.py:547
 msgid "Value"
-msgstr "Valor"
+msgstr ""
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr "Valor inválido"
+msgstr ""
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr "O valor tem que ser um número (inteiro ou decimal)"
+msgstr ""
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr "Utilização básica"
+msgstr ""
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr "Primeiro seleciona o tipo de dados:"
+msgstr ""
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr "O espaço livre no Diário;"
+msgstr ""
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr "Os tipos de Atividades Sugar que utilizaste;"
+msgstr ""
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr "Os tipos de blocos usados em TurtleBlocks."
+msgstr ""
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr "O título do gráfico é o mesmo que o título de Atividade"
+msgstr ""
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr "Podes mudar o tipo de gráfico:"
+msgstr ""
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr "Barras verticais"
+msgstr ""
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr "Barras horizontais"
+msgstr ""
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr "Linhas"
+msgstr ""
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr "Circular"
+msgstr ""
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr "Guardando como imagem"
+msgstr ""
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
 msgstr ""
-"Na barra de ferramentas de atividade tens um botão para guardar o gráfico "
-"como uma imagem"
 
 #: helpbutton.py:36
 msgid "Help"
-msgstr "Ajuda"
+msgstr ""
 
 #: readers.py:41
 msgid "Free space"
-msgstr "Espaço livre"
+msgstr ""
 
 #: readers.py:42
 msgid "Used space"
-msgstr "Espaço utilizado"
+msgstr ""
 
 #: readers.py:144
 msgid "turtle"
-msgstr "tartaruga"
+msgstr ""
 
 #: readers.py:144
 msgid "pen"
-msgstr "caneta"
+msgstr ""
 
 #: readers.py:144
 msgid "number"
-msgstr "número"
+msgstr ""
 
 #: readers.py:144
 msgid "flow"
-msgstr "seta"
+msgstr ""
 
 #: readers.py:144
 msgid "box"
-msgstr "caixa"
+msgstr ""
 
 #: readers.py:145
 msgid "sensor"
-msgstr "sensor"
+msgstr ""
 
 #: readers.py:145
 msgid "media"
@@ -188,8 +184,8 @@ msgstr ""
 
 #: readers.py:145
 msgid "extras"
-msgstr "extras"
+msgstr ""
 
 #: readers.py:270
 msgid "other"
-msgstr "outro"
+msgstr ""

@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2015-01-21 06:57+0000\n"
-"Last-Translator: ariessa <ariessa.norramli@gmail.com>\n"
+"PO-Revision-Date: 2017-10-07 07:05+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1421823466.000000\n"
+"X-POOTLE-MTIME: 1507359928.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -106,7 +106,7 @@ msgstr "Ruangan kosong di dalam Jurnal;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr "Jenis-jenis aktiviti Sugar yang telah anda gunakan:"
+msgstr "Jenis-jenis aktiviti Sugar yang telah anda gunakan;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
