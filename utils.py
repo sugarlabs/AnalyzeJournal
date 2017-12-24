@@ -17,11 +17,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gdk
 import os
-import gtk
 
-from sugar import profile
+from sugar3 import profile
+from sugar3.graphics.style import Color
 
 
 def rgb2html(color):
@@ -48,9 +50,9 @@ def rgb2html(color):
 def get_user_fill_color(type='gdk'):
     """Returns the user fill color"""
     color = profile.get_color()
-
+    print(color.get_fill_color())
     if type == 'gdk':
-        rcolor = gtk.gdk.Color(color.get_fill_color())
+        rcolor = Color(color.get_fill_color()).get_gdk_color()
 
     elif type == 'str':
         rcolor = color.get_fill_color()
@@ -63,7 +65,7 @@ def get_user_stroke_color(type='gdk'):
     color = profile.get_color()
 
     if type == 'gdk':
-        rcolor = gtk.gdk.Color(color.get_stroke_color())
+        rcolor = Color(color.get_stroke_color()).get_gdk_color()
 
     elif type == 'str':
         rcolor = color.get_stroke_color()
