@@ -25,7 +25,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, Gdk, GObject
 from gi.repository import Pango
 import os
-import simplejson
+import json
 import locale
 import logging
 import utils
@@ -460,7 +460,7 @@ class AnalyzeJournal(activity.Activity):
 
     def load_from_file(self, f):
         try:
-            data = simplejson.load(f)
+            data = json.load(f)
         finally:
             f.close()
 
@@ -508,7 +508,7 @@ class AnalyzeJournal(activity.Activity):
 
             f = open(file_path, 'w')
             try:
-                simplejson.dump(data, f)
+                json.dump(data, f)
             finally:
                 f.close()
 
