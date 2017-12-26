@@ -49,7 +49,6 @@ class FreeSpaceReader():
         chart_data = []
 
         for row in self._reader:
-            print row
             label, value = row[0], row[1]
 
             if label == "XLabel":

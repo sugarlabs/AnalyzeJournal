@@ -50,7 +50,6 @@ def rgb2html(color):
 def get_user_fill_color(type='gdk'):
     """Returns the user fill color"""
     color = profile.get_color()
-    print(color.get_fill_color())
     if type == 'gdk':
         rcolor = Color(color.get_fill_color()).get_gdk_color()
 
