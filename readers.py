@@ -25,8 +25,8 @@ import statvfs
 
 from gettext import gettext as _
 
-from sugar import env
-from sugar import profile
+from sugar3 import env
+from sugar3 import profile
 
 
 class FreeSpaceReader():
@@ -49,7 +49,6 @@ class FreeSpaceReader():
         chart_data = []
 
         for row in self._reader:
-            print row
             label, value = row[0], row[1]
 
             if label == "XLabel":
@@ -98,7 +97,7 @@ class TurtleReader():
 
     TACAT = {'clean':'forward', 'forward':'forward', 'back':'forward',
          'left':'forward', 'right':'forward', 'arc': 'arc',
-         'xcor': 'coord', 'ycor': 'coord', 'heading': 'coord', 
+         'xcor': 'coord', 'ycor': 'coord', 'heading': 'coord',
          'setxy2': 'setxy', 'seth': 'setxy', 'penup': 'pen', 'pendown': 'pen',
          'setpensize': 'pen', 'setcolor': 'pen', 'pensize': 'pen',
          'color': 'pen', 'setshade': 'pen', 'setgray': 'pen', 'shade': 'pen',
