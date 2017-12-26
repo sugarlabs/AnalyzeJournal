@@ -377,7 +377,7 @@ class AnalyzeJournal(activity.Activity):
         matches_mime_type = False
 
         response = chooser.run()
-        if response == Gtk.ResponseType.Accept:
+        if response == Gtk.ResponseType.ACCEPT:
             jobject = chooser.get_selected_object()
             metadata = jobject.metadata
             file_path = jobject.file_path
