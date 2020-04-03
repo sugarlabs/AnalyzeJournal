@@ -61,7 +61,6 @@ _CHART_FILE = utils.get_chart_file(_ACTIVITY_DIR)
 
 # Logging
 _logger = logging.getLogger('analyze-journal-activity')
-_logger.setLevel(logging.DEBUG)
 logging.basicConfig()
 
 DRAG_ACTION = Gdk.DragAction.COPY
@@ -572,21 +571,27 @@ class ChartData(Gtk.TreeView):
         self.set_cursor(self.model.get_path(_iter),
                         self.get_column(1),
                         True)
+
+        logging.debug("Added: %s, Value: %s" % (label, value))
+
         return path
 
     def remove_selected_value(self):
         model, iter = self._selection.get_selected()
         value = (self.model.get(iter, 0)[0], float(self.model.get(iter, 1)[0]))
+        logging.debug('VALUE: ' + str(value))
         self.model.remove(iter)
 
         return value
 
     def _label_changed(self, cell, path, new_text, model):
+        logging.debug("Change '%s' to '%s'" % (model[path][0], new_text))
         model[path][0] = new_text
 
         self.emit("label-changed", str(path), new_text)
 
     def _value_changed(self, cell, path, new_text, model, activity):
+        logging.debug("Change '%s' to '%s'" % (model[path][1], new_text))
         is_number = True
         number = new_text.replace(",", ".")
         try:
