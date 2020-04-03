@@ -24,7 +24,6 @@ import sugarpycha.bar
 import sugarpycha.line
 import sugarpycha.pie
 
-import gi
 from gi.repository import GObject
 import cairo
 
@@ -44,9 +43,7 @@ class Chart(GObject.GObject):
     def data_set(self, data):
         """Set chart data (dataSet)"""
 
-        self.dataSet = (
-            ('Puntos', [(i, l[1]) for i, l in enumerate(data)]),
-            )
+        self.dataSet = (('Puntos', [(i, l[1]) for i, l in enumerate(data)]), )
 
         self.options = {
             'legend': {'hide': True},
@@ -56,14 +53,11 @@ class Chart(GObject.GObject):
                 'labelFontSize': 14,
                 'lineColor': '#b3b3b3',
                 'x': {
-                    'ticks': [dict(v=i, label=l[0]) for i,
-                                                        l in enumerate(data)],
-                    'label': 'X',
-                },
+                    'ticks': [dict(v=i, label=l[0]) for i, l in enumerate(data)],
+                    'label': 'X', },
                 'y': {
                     'tickCount': 5,
-                    'label': 'Y',
-                }
+                    'label': 'Y', }
             },
             'stroke': {
                 'width': 3
@@ -107,9 +101,7 @@ class Chart(GObject.GObject):
     def render(self, sg=None):
         """Draw the chart
            Use the self.surface variable for show the chart"""
-        self.surface = cairo.ImageSurface(cairo.FORMAT_ARGB32,
-                                            self.width,
-                                            self.height)
+        self.surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, self.width, self.height)
 
         if self.type == "vbar":
             chart = sugarpycha.bar.VerticalBarChart(self.surface, self.options)
@@ -124,8 +116,7 @@ class Chart(GObject.GObject):
         elif self.type == "pie":
             self.options["legend"] = {"hide": "False"}
             chart = sugarpycha.pie.PieChart(self.surface, self.options)
-            self.dataSet = [(data[0],
-                            [[0, data[1]]]) for data in sg.chart_data]
+            self.dataSet = [(data[0], [[0, data[1]]]) for data in sg.chart_data]
 
         else:
             chart = sugarpycha.bar.HorizontalBarChart(self.surface,
