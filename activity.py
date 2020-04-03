@@ -577,26 +577,21 @@ class ChartData(Gtk.TreeView):
                         self.get_column(1),
                         True)
 
-        _logger.info("Added: %s, Value: %s" % (label, value))
-
         return path
 
     def remove_selected_value(self):
         model, iter = self._selection.get_selected()
         value = (self.model.get(iter, 0)[0], float(self.model.get(iter, 1)[0]))
-        _logger.info('VALUE: ' + str(value))
         self.model.remove(iter)
 
         return value
 
     def _label_changed(self, cell, path, new_text, model):
-        _logger.info("Change '%s' to '%s'" % (model[path][0], new_text))
         model[path][0] = new_text
 
         self.emit("label-changed", str(path), new_text)
 
     def _value_changed(self, cell, path, new_text, model, activity):
-        _logger.info("Change '%s' to '%s'" % (model[path][1], new_text))
         is_number = True
         number = new_text.replace(",", ".")
         try:
