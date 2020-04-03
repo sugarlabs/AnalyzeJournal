@@ -26,7 +26,6 @@ import shutil
 from gettext import gettext as _
 
 from sugar3 import env
-from sugar3 import profile
 
 
 class FreeSpaceReader():
@@ -63,9 +62,8 @@ class FreeSpaceReader():
         return chart_data
 
     def _get_space(self):
-        total_space, used_space, free_space = shutil.disk_usage(env.get_profile_path())
-        #free_space = stat[statvfs.f_bsize] * stat[statvfs.f_bavail]
-        #total_space = stat[statvfs.F_BSIZE] * stat[statvfs.F_BLOCKS]
+        path = env.get_profile_path()
+        total_space, used_space, free_space = shutil.disk_usage(path)
 
         free_space = self._get_MBs(free_space)
         total_space = self._get_MBs(total_space)
@@ -95,53 +93,11 @@ class TurtleReader():
     Import chart data from journal activity analysis
     """
 
-    TACAT = {'clean':'forward', 'forward':'forward', 'back':'forward',
-         'left':'forward', 'right':'forward', 'arc': 'arc',
-         'xcor': 'coord', 'ycor': 'coord', 'heading': 'coord',
-         'setxy2': 'setxy', 'seth': 'setxy', 'penup': 'pen', 'pendown': 'pen',
-         'setpensize': 'pen', 'setcolor': 'pen', 'pensize': 'pen',
-         'color': 'pen', 'setshade': 'pen', 'setgray': 'pen', 'shade': 'pen',
-         'gray': 'pen', 'fillscreen': 'pen', 'startfill': 'fill',
-         'stopfill': 'fill', 'plus2': 'number', 'minus2': 'number',
-         'product2': 'number', 'division2': 'number', 'remainder2': 'number',
-         'sqrt': 'number', 'identity2': 'number', 'and2': 'boolean',
-         'or2': 'boolean', 'not': 'boolean', 'greater2': 'boolean',
-         'less2': 'boolean', 'equal2': 'boolean', 'random': 'random',
-         'repeat': 'repeat', 'forever': 'repeat', 'if': 'ifthen',
-         'ifelse': 'ifthen', 'while': 'ifthen', 'until': 'ifthen',
-         'hat': 'action', 'stack': 'action', 'storein': 'box', 'box': 'box',
-         'luminance': 'sensor', 'mousex': 'sensor', 'mousey': 'sensor',
-         'mousebutton2': 'sensor', 'keyboard': 'sensor', 'kbinput': 'sensor',
-         'readpixel': 'sensor', 'see': 'sensor', 'time': 'sensor',
-         'sound': 'sensor', 'volume': 'sensor', 'pitch': 'sensor',
-         'resistance': 'sensor', 'voltage': 'sensor', 'video': 'media',
-         'wait': 'media', 'camera': 'media', 'journal': 'media',
-         'audio': 'media', 'show': 'media', 'setscale': 'media',
-         'savepix': 'media', 'savesvg': 'media', 'mediawait': 'media',
-         'mediapause': 'media', 'mediastop': 'media', 'mediaplay': 'media',
-         'speak': 'media', 'sinewave': 'media', 'description': 'media',
-         'push':'extras', 'pop':'extras', 'printheap':'extras',
-         'clearheap':'extras', 'isheapempty2':'extras', 'chr':'extras',
-         'int':'extras', 'myfunction': 'python', 'userdefined': 'python',
-         'loadblock': 'python', 'loadpalette': 'python'}
-    TAPAL = {'forward': 'turtlep', 'arc': 'turtlep', 'coord': 'turtlep',
-         'setxy': 'turtlep', 'pen': 'penp', 'fill': 'penp', 'number': 'numberp',
-         'random': 'numberp', 'boolean': 'numberp', 'repeat': 'flowp',
-         'ifthen': 'flowp', 'action': 'boxp', 'box': 'boxp',
-         'sensor': 'sensorp', 'media': 'mediap', 'extras': 'extrasp',
-         'python': 'extrasp'}
-    TASCORE = {'forward': 3, 'arc': 3, 'setxy': 2.5, 'coord': 4, 'turtlep': 5,
-           'pen': 2.5, 'fill': 2.5, 'penp': 5,
-           'number': 2.5, 'boolean': 2.5, 'random': 2.5, 'numberp': 0,
-           'repeat': 2.5, 'ifthen': 7.5, 'flowp': 10,
-           'box': 7.5, 'action': 7.5, 'boxp': 0,
-           'media': 5, 'mediap': 0,
-           'python': 5, 'extras': 5, 'extrasp': 0,
-           'sensor': 5, 'sensorp': 0}
-    PALS = ['turtlep', 'penp', 'numberp', 'flowp', 'boxp', 'sensorp', 'mediap',
-            'extrasp']
-    PALNAMES = [_('turtle'), _('pen'), _('number'), _('flow'), _('box'),
-                _('sensor'), _('media'), _('extras')]
+    TACAT = {'clean': 'forward', 'forward': 'forward', 'back': 'forward', 'left': 'forward', 'right': 'forward', 'arc': 'arc', 'xcor': 'coord', 'ycor': 'coord', 'heading': 'coord', 'setxy2': 'setxy', 'seth': 'setxy', 'penup': 'pen', 'pendown': 'pen', 'setpensize': 'pen', 'setcolor': 'pen', 'pensize': 'pen', 'color': 'pen', 'setshade': 'pen', 'setgray': 'pen', 'shade': 'pen', 'gray': 'pen', 'fillscreen': 'pen', 'startfill': 'fill', 'stopfill': 'fill', 'plus2': 'number', 'minus2': 'number', 'product2': 'number', 'division2': 'number', 'remainder2': 'number', 'sqrt': 'number', 'identity2': 'number', 'and2': 'boolean', 'or2': 'boolean', 'not': 'boolean', 'greater2': 'boolean', 'less2': 'boolean', 'equal2': 'boolean', 'random': 'random', 'repeat': 'repeat', 'forever': 'repeat', 'if': 'ifthen', 'ifelse': 'ifthen', 'while': 'ifthen', 'until': 'ifthen', 'hat': 'action', 'stack': 'action', 'storein': 'box', 'box': 'box', 'luminance': 'sensor', 'mousex': 'sensor', 'mousey': 'sensor', 'mousebutton2': 'sensor', 'keyboard': 'sensor', 'kbinput': 'sensor', 'readpixel': 'sensor', 'see': 'sensor', 'time': 'sensor', 'sound': 'sensor', 'volume': 'sensor', 'pitch': 'sensor', 'resistance': 'sensor', 'voltage': 'sensor', 'video': 'media', 'wait': 'media', 'camera': 'media', 'journal': 'media', 'audio': 'media', 'show': 'media', 'setscale': 'media', 'savepix': 'media', 'savesvg': 'media', 'mediawait': 'media', 'mediapause': 'media', 'mediastop': 'media', 'mediaplay': 'media', 'speak': 'media', 'sinewave': 'media', 'description': 'media', 'push': 'extras', 'pop': 'extras', 'printheap': 'extras', 'clearheap': 'extras', 'isheapempty2': 'extras', 'chr': 'extras', 'int': 'extras', 'myfunction': 'python', 'userdefined': 'python', 'loadblock': 'python', 'loadpalette': 'python'}
+    TAPAL = {'forward': 'turtlep', 'arc': 'turtlep', 'coord': 'turtlep', 'setxy': 'turtlep', 'pen': 'penp', 'fill': 'penp', 'number': 'numberp', 'random': 'numberp', 'boolean': 'numberp', 'repeat': 'flowp', 'ifthen': 'flowp', 'action': 'boxp', 'box': 'boxp', 'sensor': 'sensorp', 'media': 'mediap', 'extras': 'extrasp', 'python': 'extrasp'}
+    TASCORE = {'forward': 3, 'arc': 3, 'setxy': 2.5, 'coord': 4, 'turtlep': 5, 'pen': 2.5, 'fill': 2.5, 'penp': 5, 'number': 2.5, 'boolean': 2.5, 'random': 2.5, 'numberp': 0, 'repeat': 2.5, 'ifthen': 7.5, 'flowp': 10, 'box': 7.5, 'action': 7.5, 'boxp': 0, 'media': 5, 'mediap': 0, 'python': 5, 'extras': 5, 'extrasp': 0, 'sensor': 5, 'sensorp': 0}
+    PALS = ['turtlep', 'penp', 'numberp', 'flowp', 'boxp', 'sensorp', 'mediap', 'extrasp']
+    PALNAMES = [_('turtle'), _('pen'), _('number'), _('flow'), _('box'), _('sensor'), _('media'), _('extras')]
 
     def hasturtleblocks(self, path):
         ''' Parse turtle block data and generate score based on rubric '''
@@ -213,6 +169,8 @@ class TurtleReader():
 
 MAX = 19
 DIROFINTEREST = 'datastore'
+
+
 class ParseJournal():
     ''' Simple parser of datastore '''
 

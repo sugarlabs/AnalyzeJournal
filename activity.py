@@ -36,11 +36,9 @@ from gettext import gettext as _
 from sugar3.activity import activity
 from sugar3.activity.widgets import ActivityToolbarButton
 from sugar3.activity.widgets import StopButton
-from sugar3.activity.widgets import ToolbarButton
 from sugar3.graphics.toolbarbox import ToolbarBox
 from sugar3.graphics.toolbutton import ToolButton
 from sugar3.graphics.radiotoolbutton import RadioToolButton
-from sugar3.graphics.colorbutton import ColorToolButton
 from sugar3.graphics.objectchooser import ObjectChooser
 from sugar3.graphics.icon import Icon
 from sugar3.graphics.alert import Alert
@@ -66,8 +64,8 @@ _logger = logging.getLogger('analyze-journal-activity')
 _logger.setLevel(logging.DEBUG)
 logging.basicConfig()
 
-#Dragging
 DRAG_ACTION = Gdk.DragAction.COPY
+
 
 class ChartArea(Gtk.DrawingArea):
 
@@ -75,7 +73,9 @@ class ChartArea(Gtk.DrawingArea):
         """A class for Draw the chart"""
         super(ChartArea, self).__init__()
         self._parent = parent
-        self.add_events(Gdk.EventMask.EXPOSURE_MASK | Gdk.EventMask.VISIBILITY_NOTIFY_MASK)
+        self.exposure = Gdk.EventMask.EXPOSURE_MASK
+        self.visibility = Gdk.EventMask.VISIBILITY_NOTIFY_MASK
+        self.add_events(self.exposure | self.visibility)
         self.connect("draw", self._draw_cb)
 
         self.drag_dest_set(Gtk.DestDefaults.ALL, [], DRAG_ACTION)
@@ -231,8 +231,7 @@ class AnalyzeJournal(activity.Activity):
             box_width = allocation.width / 3
             box.set_size_request(box_width, -1)
 
-        self._setup_handle = paned.connect('size_allocate',
-                    size_allocate_cb)
+        self._setup_handle = paned.connect('size_allocate', size_allocate_cb)
 
         scroll = Gtk.ScrolledWindow()
         scroll.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
@@ -392,8 +391,7 @@ class AnalyzeJournal(activity.Activity):
                 alert = Alert()
 
                 alert.props.title = _('Invalid object')
-                alert.props.msg = \
-                       _('The selected object must be a %s file' % (type_name))
+                alert.props.msg = _('The selected object must be a %s file' % (type_name))
 
                 ok_icon = Icon(icon_name='dialog-ok')
                 alert.add_button(Gtk.ResponseType.OK, _('Ok'), ok_icon)
@@ -415,19 +413,17 @@ class AnalyzeJournal(activity.Activity):
         horizontal, vertical = reader.get_labels_name()
 
         # Load the data
-        for row  in chart_data:
-            self._add_value(None,
-                            label=row[0], value=float(row[1]))
+        for row in chart_data:
+            self._add_value(None, label=row[0], value=float(row[1]))
 
             self.update_chart()
 
     def _add_value(self, widget, label="", value="0.0"):
         data = (label, float(value))
-        if not data in self.chart_data:
+        if data not in self.chart_data:
             pos = self.labels_and_values.add_value(label, value)
             self.chart_data.insert(pos, data)
             self._update_chart_data()
-
 
     def _remove_value(self, widget):
         value = self.labels_and_values.remove_selected_value()
@@ -435,8 +431,8 @@ class AnalyzeJournal(activity.Activity):
         self._update_chart_data()
 
     def __import_freespace_cb(self, widget):
-            reader = FreeSpaceReader()
-            self._graph_from_reader(reader)
+        reader = FreeSpaceReader()
+        self._graph_from_reader(reader)
 
     def __import_journal_cb(self, widget):
         reader = JournalReader()
@@ -489,10 +485,9 @@ class AnalyzeJournal(activity.Activity):
         elif _type == "pie":
             self.chart_type_buttons[3].set_active(True)
 
-        #load the data
-        for row  in chart_data:
+        # load the data
+        for row in chart_data:
             self._add_value(None, label=row[0], value=float(row[1]))
-
 
         self.update_chart()
 
@@ -522,14 +517,11 @@ class AnalyzeJournal(activity.Activity):
 
 class ChartData(Gtk.TreeView):
 
-    __gsignals__ = {
-             'label-changed': (GObject.SignalFlags.RUN_FIRST, None, [str, str], ),
-             'value-changed': (GObject.SignalFlags.RUN_FIRST, None, [str, str], ), }
+    __gsignals__ = {'label-changed': (GObject.SignalFlags.RUN_FIRST, None, [str, str], ), 'value-changed': (GObject.SignalFlags.RUN_FIRST, None, [str, str], ), }
 
     def __init__(self, activity):
 
         GObject.GObject.__init__(self)
-
 
         self.model = Gtk.ListStore(str, str)
         self.set_model(self.model)
@@ -575,11 +567,9 @@ class ChartData(Gtk.TreeView):
         except ValueError:
             _iter = self.model.append([label, str(value)])
 
-
         self.set_cursor(self.model.get_path(_iter),
                         self.get_column(1),
                         True)
-
         return path
 
     def remove_selected_value(self):
@@ -613,8 +603,7 @@ class ChartData(Gtk.TreeView):
             alert = Alert()
 
             alert.props.title = _('Invalid Value')
-            alert.props.msg = \
-                           _('The value must be a number (integer or decimal)')
+            alert.props.msg = _('The value must be a number (integer or decimal)')
 
             ok_icon = Icon(icon_name='dialog-ok')
             alert.add_button(Gtk.ResponseType.OK, _('Ok'), ok_icon)
