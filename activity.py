@@ -403,7 +403,7 @@ class AnalyzeJournal(activity.Activity):
 
                 alert.show()
 
-        return matches_mime_type, file_path, metadata['title']
+            return matches_mime_type, file_path, metadata['title']
 
     def _graph_from_reader(self, reader):
         self.labels_and_values.model.clear()
@@ -439,11 +439,13 @@ class AnalyzeJournal(activity.Activity):
         self._graph_from_reader(reader)
 
     def __import_turtle_cb(self, widget):
-        matches_mime_type, file_path, title = self._object_chooser(
-            'application/x-turtle-art', _('Turtle'))
-        if matches_mime_type:
-            reader = TurtleReader(file_path)
-            self._graph_from_reader(reader)
+        try:
+            matches_mime_type, file_path, title = self._object_chooser('application/x-turtle-art', _('Turtle'))
+            if matches_mime_type:
+                reader = TurtleReader(file_path)
+                self._graph_from_reader(reader)
+        except TypeError:
+            return
 
     def _save_as_image(self, widget):
         if self.current_chart:
