@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2016-08-02 17:52+0000\n"
-"Last-Translator: betoraposa <humberto.celiasilva@gmail.com>\n"
+"PO-Revision-Date: 2018-09-10 20:21+0000\n"
+"Last-Translator: Paulo Francisco <slomp@ufrgs.br>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1470160379.000000\n"
+"X-POOTLE-MTIME: 1536610872.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
@@ -33,7 +33,7 @@ msgstr "Salvar como imagem"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr "Ler dados do Freespace"
+msgstr "Ler dados do espaço livre"
 
 #: activity.py:159
 msgid "Read Journal data"
@@ -41,7 +41,7 @@ msgstr "Ler dados do Diário"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr "Ler dados de Tartaruga"
+msgstr "Ler dados da Tartaruga"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
@@ -78,7 +78,7 @@ msgstr "Tartaruga"
 
 #: activity.py:536
 msgid "Label"
-msgstr "Rótulo"
+msgstr "Etiqueta"
 
 #: activity.py:547
 msgid "Value"
@@ -98,7 +98,7 @@ msgstr "Uso básico"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr "Primeiro, selecione o tipo de dado:"
+msgstr "Primeiro selecione o tipo de dados:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
