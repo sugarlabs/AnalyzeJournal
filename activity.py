@@ -66,6 +66,8 @@ _logger = logging.getLogger('analyze-journal-activity')
 _logger.setLevel(logging.DEBUG)
 logging.basicConfig()
 
+#Dragging
+DRAG_ACTION = Gdk.DragAction.COPY
 
 class ChartArea(Gtk.DrawingArea):
 
@@ -76,6 +78,7 @@ class ChartArea(Gtk.DrawingArea):
         self.add_events(Gdk.EventMask.EXPOSURE_MASK | Gdk.EventMask.VISIBILITY_NOTIFY_MASK)
         self.connect("draw", self._draw_cb)
 
+        self.drag_dest_set(Gtk.DestDefaults.ALL, [], DRAG_ACTION)
         self.drag_dest_set_target_list(Gtk.TargetList.new([]))
         self.drag_dest_add_text_targets()
         self.connect('drag_data_received', self._drag_data_received)
