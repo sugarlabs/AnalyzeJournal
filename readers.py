@@ -21,7 +21,6 @@
 
 import os
 import glob
-import shutil
 
 from gettext import gettext as _
 
@@ -63,7 +62,9 @@ class FreeSpaceReader():
 
     def _get_space(self):
         path = env.get_profile_path()
-        total_space, used_space, free_space = shutil.disk_usage(path)
+        stat = os.statvfs(path)
+        free_space = stat[0] * stat[4]
+        total_space = stat[0] * stat[2]
 
         free_space = self._get_MBs(free_space)
         total_space = self._get_MBs(total_space)
