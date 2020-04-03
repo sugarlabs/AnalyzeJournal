@@ -23,6 +23,7 @@ import cairo
 
 from sugarpycha.color import ColorScheme, hex2rgb, DEFAULT_COLOR
 from sugarpycha.utils import safe_unicode
+import collections
 from functools import reduce
 
 
@@ -358,7 +359,7 @@ class Chart(object):
 
     def _renderTick(self, cx, tick, x, y, x2, y2, rotate, text_position):
         """Aux method for _renderXTick and _renderYTick"""
-        if callable(tick):
+        if isinstance(tick, collections.Callable):
             return
 
         cx.new_path()
