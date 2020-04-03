@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-04 00:32-0400\n"
-"PO-Revision-Date: 2017-04-04 16:23+0000\n"
-"Last-Translator: GeeKrypter <psramaraju@gmail.com>\n"
+"PO-Revision-Date: 2020-04-03 09:24+0000\n"
+"Last-Translator: Jui  <juipradhan2k@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
@@ -16,40 +16,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1491323018.000000\n"
+"X-POOTLE-MTIME: 1585905866.000000\n"
 
 #. TRANS: "name" option from activity.info file
 msgid "Analyze Journal"
-msgstr ""
+msgstr "जर्नल का विश्लेषण करें"
 
 #. TRANS: "summary" option from activity.info file
 #. TRANS: "description" option from activity.info file
 msgid "chart of Sugar Journal activity"
-msgstr ""
+msgstr "सुगर जर्नल गतिविधि का चार्ट"
 
 #: activity.py:144
 msgid "Save as image"
-msgstr ""
+msgstr "छवि के रूप में सहेजें"
 
 #: activity.py:153
 msgid "Read Freespace data"
-msgstr ""
+msgstr "फ्रीस्पेस डेटा पढ़ें"
 
 #: activity.py:159
 msgid "Read Journal data"
-msgstr ""
+msgstr "जर्नल डेटा पढ़ें"
 
 #: activity.py:165
 msgid "Read Turtle data"
-msgstr ""
+msgstr "कछुए डेटा पढ़ें"
 
 #: activity.py:176
 msgid "Vertical Bar Chart"
-msgstr ""
+msgstr "वर्टिकल बार चार्ट"
 
 #: activity.py:183
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "क्षैतिज बार चार्ट"
 
 #: activity.py:190
 msgid "Pie Chart"
@@ -61,12 +61,12 @@ msgstr "पूर्ण स्क्रीन"
 
 #: activity.py:394
 msgid "Invalid object"
-msgstr ""
+msgstr "अमान्य वस्तु"
 
 #: activity.py:396
 #, python-format
 msgid "The selected object must be a %s file"
-msgstr ""
+msgstr "चयनित वस्तु एक% s फ़ाइल होनी चाहिए"
 
 #: activity.py:399 activity.py:617
 msgid "Ok"
@@ -74,7 +74,7 @@ msgstr "ठीक"
 
 #: activity.py:446
 msgid "Turtle"
-msgstr ""
+msgstr "कछुआ"
 
 #: activity.py:536
 msgid "Label"
@@ -86,63 +86,63 @@ msgstr "मूल्य"
 
 #: activity.py:612
 msgid "Invalid Value"
-msgstr ""
+msgstr "अमान्य मूल्य"
 
 #: activity.py:614
 msgid "The value must be a number (integer or decimal)"
-msgstr ""
+msgstr "मान एक संख्या (पूर्णांक या दशमलव) होना चाहिए"
 
 #: charthelp.py:12
 msgid "Basic usage"
-msgstr ""
+msgstr "मूल उपयोग"
 
 #: charthelp.py:13
 msgid "First select data type:"
-msgstr ""
+msgstr "पहले डेटा प्रकार चुनें:"
 
 #: charthelp.py:14
 msgid "The free space in the Journal;"
-msgstr ""
+msgstr "जर्नल में मुक्त स्थान;"
 
 #: charthelp.py:16
 msgid "The types of Sugar Activities you have used;"
-msgstr ""
+msgstr "आपके द्वारा उपयोग की जाने वाली चीनी गतिविधियों के प्रकार;"
 
 #: charthelp.py:18
 msgid "The types of blocks used in Turtle Art."
-msgstr ""
+msgstr "टार्टल आर्ट में प्रयुक्त ब्लॉक के प्रकार।"
 
 #: charthelp.py:20
 msgid "The graph title is the same as the Activity title"
-msgstr ""
+msgstr "ग्राफ शीर्षक खेल शीर्षक के समान है"
 
 #: charthelp.py:22
 msgid "You can change the type of graph:"
-msgstr ""
+msgstr "आप ग्राफ के शीर्षक को बदल सकते हैं:"
 
 #: charthelp.py:23
 msgid "Vertical bars"
-msgstr ""
+msgstr "लंबवत पट्टियाँ"
 
 #: charthelp.py:24
 msgid "Horizontal bars"
-msgstr ""
+msgstr "क्षैतिज पट्टियाँ"
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "पंक्तियां"
 
 #: charthelp.py:26
 msgid "Pie"
-msgstr ""
+msgstr "पाई"
 
 #: charthelp.py:28
 msgid "Saving as an image"
-msgstr ""
+msgstr "एक छवि के रूप में रखना"
 
 #: charthelp.py:29
 msgid "In the activity toolbar you have button to save the graph as an image"
-msgstr ""
+msgstr "खेल टूलबार में आपके पास छवि के रूप में ग्राफ को बचाने के लिए एक बटन है"
 
 #: helpbutton.py:36
 msgid "Help"
@@ -150,15 +150,15 @@ msgstr "मदद"
 
 #: readers.py:41
 msgid "Free space"
-msgstr ""
+msgstr "खाली जगह"
 
 #: readers.py:42
 msgid "Used space"
-msgstr ""
+msgstr "उपयोग में लाया गया स्थान"
 
 #: readers.py:144
 msgid "turtle"
-msgstr ""
+msgstr "टार्टल"
 
 #: readers.py:144
 msgid "pen"
@@ -170,7 +170,7 @@ msgstr "संख्या"
 
 #: readers.py:144
 msgid "flow"
-msgstr ""
+msgstr "प्रवाह"
 
 #: readers.py:144
 msgid "box"
@@ -178,16 +178,16 @@ msgstr "डिब्बा"
 
 #: readers.py:145
 msgid "sensor"
-msgstr ""
+msgstr "सेंसर"
 
 #: readers.py:145
 msgid "media"
-msgstr ""
+msgstr "मीडिया"
 
 #: readers.py:145
 msgid "extras"
-msgstr ""
+msgstr "एक्स्ट्रा "
 
 #: readers.py:270
 msgid "other"
-msgstr ""
+msgstr "अन्य"
