@@ -21,7 +21,7 @@
 
 import os
 import glob
-import statvfs
+import shutil
 
 from gettext import gettext as _
 
@@ -63,9 +63,9 @@ class FreeSpaceReader():
         return chart_data
 
     def _get_space(self):
-        stat = os.statvfs(env.get_profile_path())
-        free_space = stat[statvfs.F_BSIZE] * stat[statvfs.F_BAVAIL]
-        total_space = stat[statvfs.F_BSIZE] * stat[statvfs.F_BLOCKS]
+        total_space, used_space, free_space = shutil.disk_usage(env.get_profile_path())
+        #free_space = stat[statvfs.f_bsize] * stat[statvfs.f_bavail]
+        #total_space = stat[statvfs.F_BSIZE] * stat[statvfs.F_BLOCKS]
 
         free_space = self._get_MBs(free_space)
         total_space = self._get_MBs(total_space)
