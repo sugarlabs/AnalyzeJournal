@@ -201,6 +201,7 @@ class AnalyzeJournal(activity.Activity):
 
         self.chart_type_buttons = [add_vbar_chart,
                                    add_hbar_chart,
+                                   add_line_chart,
                                    add_pie_chart]
 
         separator = Gtk.SeparatorToolItem()
@@ -381,7 +382,8 @@ class AnalyzeJournal(activity.Activity):
         self._render_chart()
 
     def _object_chooser(self, mime_type, type_name):
-        chooser = ObjectChooser()
+        chooser = None
+        chooser = ObjectChooser(parent=self, what_filter=mime_type)
         matches_mime_type = False
 
         response = chooser.run()
