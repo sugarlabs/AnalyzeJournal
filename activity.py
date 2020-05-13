@@ -399,7 +399,8 @@ class AnalyzeJournal(activity.Activity):
                 alert = Alert()
 
                 alert.props.title = _('Invalid object')
-                alert.props.msg = _('The selected object must be a %s file' % (type_name))
+                alert.props.msg = _('The selected object must be a %s file'
+                                    % (type_name))
 
                 ok_icon = Icon(icon_name='dialog-ok')
                 alert.add_button(Gtk.ResponseType.OK, _('Ok'), ok_icon)
@@ -448,7 +449,10 @@ class AnalyzeJournal(activity.Activity):
 
     def __import_turtle_cb(self, widget):
         try:
-            matches_mime_type, file_path, title = self._object_chooser('application/x-turtle-art', _('Turtle'))
+            matches_mime_type, \
+                file_path, \
+                title = self._object_chooser('application/x-turtle-art',
+                                             _('Turtle'))
             if matches_mime_type:
                 reader = TurtleReader(file_path)
                 self._graph_from_reader(reader)
@@ -527,7 +531,10 @@ class AnalyzeJournal(activity.Activity):
 
 class ChartData(Gtk.TreeView):
 
-    __gsignals__ = {'label-changed': (GObject.SignalFlags.RUN_FIRST, None, [str, str], ), 'value-changed': (GObject.SignalFlags.RUN_FIRST, None, [str, str], ), }
+    __gsignals__ = {'label-changed': (GObject.SignalFlags.RUN_FIRST,
+                                      None, [str, str], ),
+                    'value-changed': (GObject.SignalFlags.RUN_FIRST,
+                                      None, [str, str], ), }
 
     def __init__(self, activity):
 
@@ -619,7 +626,8 @@ class ChartData(Gtk.TreeView):
             alert = Alert()
 
             alert.props.title = _('Invalid Value')
-            alert.props.msg = _('The value must be a number (integer or decimal)')
+            alert.props.msg = \
+                _('The value must be a number (integer or decimal)')
 
             ok_icon = Icon(icon_name='dialog-ok')
             alert.add_button(Gtk.ResponseType.OK, _('Ok'), ok_icon)

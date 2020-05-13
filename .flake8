@@ -3,8 +3,5 @@
 # E402 module level import not at top of file
 # gi.require_version() is required before later imports
 
-ignore = E402, E501
-
-#E501 line too long
-#readers.py definition of TACAT, TAPAL, TASCORE can't be shortened
+ignore = E402
 
