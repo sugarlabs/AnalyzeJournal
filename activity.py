@@ -382,8 +382,7 @@ class AnalyzeJournal(activity.Activity):
         self._render_chart()
 
     def _object_chooser(self, mime_type, type_name):
-        chooser = None
-        chooser = ObjectChooser(parent=self, what_filter=mime_type)
+        chooser = ObjectChooser(parent=self)
         matches_mime_type = False
 
         response = chooser.run()
