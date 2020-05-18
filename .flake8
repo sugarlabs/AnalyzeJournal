@@ -4,4 +4,3 @@
 # gi.require_version() is required before later imports
 
 ignore = E402
-

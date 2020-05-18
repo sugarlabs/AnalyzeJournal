@@ -17,7 +17,7 @@ def create_help(toolbar):
                            'import-journal')
     helpitem.add_paragraph(_('The types of blocks used in Turtle Art.'),
                            'import-turtle')
-    helpitem.add_paragraph(_('The graph title is same as the Activity title'))
+    helpitem.add_paragraph(_('The graph title is the same as the Activity title'))
 
     helpitem.add_paragraph(_('You can change the type of graph:'))
     helpitem.add_paragraph(_('Vertical bars'), 'vbar')
