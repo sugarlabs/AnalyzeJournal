@@ -63,8 +63,8 @@ class FreeSpaceReader():
     def _get_space(self):
         path = env.get_profile_path()
         stat = os.statvfs(path)
-        free_space = stat[0] * stat[4]
-        total_space = stat[0] * stat[2]
+        free_space = stat.f_bsize * stat.f_bavail
+        total_space = stat.f_bsize * stat.f_blocks
 
         free_space = self._get_MBs(free_space)
         total_space = self._get_MBs(total_space)
