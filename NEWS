@@ -1,3 +1,18 @@
+5
+
+* Refresh POT file (Jui Pradhan),
+* Added New Feature : Line Chart (Jui Pradhan),
+* Translations from translate.sugarlabs.org,
+* Add Screenshots (Jui Pradhan),
+* Update README (Jui Pradhan),
+* Fix Object Chooser (Jui Pradhan),
+* Flake8 changes (Jui Pradhan),
+* Port to Python3 (Jui Pradhan),
+* Demote Logging (Jui Pradhan),
+* Fix Gtk-Warnings (Jui Pradhan),
+* Port to GTK+3 (Sanatan),
+* Add GPLv3 (pipix51)
+
 4
 
 * New translations
