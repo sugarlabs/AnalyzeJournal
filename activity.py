@@ -580,7 +580,7 @@ class ChartData(Gtk.TreeView):
             path = int(str(self.model.get_path(selected))) + 1
         try:
             _iter = self.model.insert(path, [label, value])
-        except ValueError:
+        except (ValueError, TypeError):
             _iter = self.model.append([label, str(value)])
 
         self.set_cursor(self.model.get_path(_iter),
