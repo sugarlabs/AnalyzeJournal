@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-21 11:07+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: gom@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: activity/activity.info:2
+msgid "Analyze Journal"
+msgstr ""
+
+#: activity/activity.info:3
+msgid "chart of Sugar Journal activity"
+msgstr ""
+
+#: activity.py:143
+msgid "Save as image"
+msgstr ""
+
+#: activity.py:152
+msgid "Read Freespace data"
+msgstr ""
+
+#: activity.py:158
+msgid "Read Journal data"
+msgstr ""
+
+#: activity.py:164
+msgid "Read Turtle data"
+msgstr ""
+
+#: activity.py:175
+msgid "Vertical Bar Chart"
+msgstr ""
+
+#: activity.py:182
+msgid "Horizontal Bar Chart"
+msgstr ""
+
+#: activity.py:189
+msgid "Line Bar Chart"
+msgstr ""
+
+#: activity.py:196
+msgid "Pie Chart"
+msgstr ""
+
+#: activity.py:213
+msgid "Fullscreen"
+msgstr ""
+
+#: activity.py:400
+msgid "Invalid object"
+msgstr ""
+
+#: activity.py:401
+#, python-format
+msgid "The selected object must be a %s file"
+msgstr ""
+
+#: activity.py:405 activity.py:632
+msgid "Ok"
+msgstr ""
+
+#: activity.py:454
+msgid "Turtle"
+msgstr ""
+
+#: activity.py:550
+msgid "Label"
+msgstr ""
+
+#: activity.py:561
+msgid "Value"
+msgstr ""
+
+#: activity.py:627
+msgid "Invalid Value"
+msgstr ""
+
+#: activity.py:629
+msgid "The value must be a number (integer or decimal)"
+msgstr ""
+
+#: charthelp.py:12
+msgid "Basic usage"
+msgstr ""
+
+#: charthelp.py:13
+msgid "First select data type:"
+msgstr ""
+
+#: charthelp.py:14
+msgid "The free space in the Journal;"
+msgstr ""
+
+#: charthelp.py:16
+msgid "The types of Sugar Activities you have used;"
+msgstr ""
+
+#: charthelp.py:18
+msgid "The types of blocks used in Turtle Art."
+msgstr ""
+
+#: charthelp.py:20
+msgid "The graph title is the same as the Activity title"
+msgstr ""
+
+#: charthelp.py:22
+msgid "You can change the type of graph:"
+msgstr ""
+
+#: charthelp.py:23
+msgid "Vertical bars"
+msgstr ""
+
+#: charthelp.py:24
+msgid "Horizontal bars"
+msgstr ""
+
+#: charthelp.py:25
+msgid "Lines"
+msgstr ""
+
+#: charthelp.py:26
+msgid "Pie"
+msgstr ""
+
+#: charthelp.py:28
+msgid "Saving as an image"
+msgstr ""
+
+#: charthelp.py:29
+msgid "In the activity toolbar you have button to save the graph as an image"
+msgstr ""
+
+#: helpbutton.py:38
+msgid "Help"
+msgstr ""
+
+#: readers.py:39
+msgid "Free space"
+msgstr ""
+
+#: readers.py:40
+msgid "Used space"
+msgstr ""
+
+#: readers.py:143
+msgid "turtle"
+msgstr ""
+
+#: readers.py:143
+msgid "pen"
+msgstr ""
+
+#: readers.py:143
+msgid "number"
+msgstr ""
+
+#: readers.py:143
+msgid "flow"
+msgstr ""
+
+#: readers.py:143
+msgid "box"
+msgstr ""
+
+#: readers.py:144
+msgid "sensor"
+msgstr ""
+
+#: readers.py:144
+msgid "media"
+msgstr ""
+
+#: readers.py:144
+msgid "extras"
+msgstr ""
+
+#: readers.py:271
+msgid "other"
+msgstr ""
