@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-21 11:07+0530\n"
-"PO-Revision-Date: 2026-06-15 04:31+0000\n"
+"PO-Revision-Date: 2026-06-15 07:48+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/analyzejournal/ka/>\n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: activity.py:405 activity.py:632
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: activity.py:454
 msgid "Turtle"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: activity.py:561
 msgid "Value"
-msgstr ""
+msgstr "მნიშვნელობა"
 
 #: activity.py:627
 msgid "Invalid Value"
@@ -134,7 +134,7 @@ msgstr ""
 
 #: charthelp.py:25
 msgid "Lines"
-msgstr ""
+msgstr "ხაზები"
 
 #: charthelp.py:26
 msgid "Pie"
