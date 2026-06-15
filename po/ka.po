@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-21 11:07+0530\n"
-"PO-Revision-Date: 2026-06-15 03:03+0000\n"
+"PO-Revision-Date: 2026-06-15 04:31+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/analyzejournal/ka/>\n"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: activity.py:454
 msgid "Turtle"
-msgstr ""
+msgstr "კუ"
 
 #: activity.py:550
 msgid "Label"
@@ -166,19 +166,19 @@ msgstr "კუ"
 
 #: readers.py:143
 msgid "pen"
-msgstr ""
+msgstr "კალამი"
 
 #: readers.py:143
 msgid "number"
-msgstr ""
+msgstr "რიცხვი"
 
 #: readers.py:143
 msgid "flow"
-msgstr ""
+msgstr "დინება"
 
 #: readers.py:143
 msgid "box"
-msgstr ""
+msgstr "ყუთი"
 
 #: readers.py:144
 msgid "sensor"
